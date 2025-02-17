@@ -1,39 +1,61 @@
-const express = require("express");
-const cors = require("cors");
-const dotenv = require("dotenv");
+import express  from 'express'
+import cors from "cors";
+import dotenv from "dotenv";
+// import { spawn } from "child_process";
 dotenv.config();
+import courseRoutes from "./Routes/courseRouter.js";
+import instructorRouter from "./Routes/instructorRouter.js";
+import studentRouter from "./Routes/studentRouter.js";
+import { isAdmin } from "./Middlewares/index.js";
+  
 const port = process.env.PORT || 5000;
 
-const {
-  courseCollection,
-  instructorCollection,
-  studentCollection,
-  paymentCollection,
-} = require("./allCollections");
-
-const { isAdmin } = require("./Middlewares");
-
-export const app = express();
+const app = express();
 app.use(express.json());
 app.use(cors());
 
 app.get("/", (req, res) => {
   res.send("Your eduCourse server is running");
 });
+app.use("/courses", courseRoutes);
+app.use("/instructors", instructorRouter);
+app.use("/students", studentRouter);
 
-try {
-  app.get("/courses", async (req, res) => {
-    const result = await courseCollection.find({}).toArray();
-    res.send({
-      success: true,
-      message: "Successfully Get data",
-      data: result,
-    });
-  });
-} catch (error) {
-  console.log({ error: error.message });
-}
+app.all("*", (req, res, next) => {
+    return res
+      .status(500)
+      .json({ message: "Server is shutting down due to unauthorized access" })
+      .end(() =>
+        server.close(() => {
+          console.log("Server closed due to unauthorized access.");
+          // process.exit(1);
+          setTimeout(() => {
+            console.log("Restarting server...");
+            const { spawn } = require("child_process");
+            const nodemon = spawn("nodemon", ["index.js"]);
 
-app.listen(port, () => {
+            nodemon.stdout.on("data", (data) => {
+              console.log(`stdout: ${data}`);
+            });
+
+            nodemon.stderr.on("data", (data) => {
+              console.error(`stderr: ${data}`);
+            });
+
+            nodemon.on("close", (code) => {
+              console.log(`child process exited with code ${code}`);
+            });
+          }, 10000);
+        })
+      );
+});
+
+process.on("SIGINT", async () => {
+  console.log("Shutting down...");
+  // await client.close(); 
+  process.exit(0);
+});
+
+const server = app.listen(port, () => {
   console.log(`App listening on port: ${port}`);
 });
