@@ -2,8 +2,8 @@ import express from "express";
 import { ObjectId } from "mongodb";
 const router = express.Router();
 
-// import { courseCollection } from "../allCollections"; 
-import { errorHandler } from '../Middlewares/index.js';
+import { courseCollection } from "../allCollections/index.js";
+import { errorHandler } from "../Middlewares/index.js";
 
 router.get("/", async (req, res) => {
   try {
@@ -20,8 +20,9 @@ router.get("/", async (req, res) => {
 
 router.get("/:id", async (req, res) => {
   try {
-    const id = req.params.id
-    const result = await courseCollection.find({_id: new ObjectId(id)});
+    const id = req.params.id;
+    console.log(id, "id");
+    const result = await courseCollection.findOne({ _id: new ObjectId(id) });
     res.send({
       success: true,
       message: "Successfully retrieved data",

@@ -21,7 +21,7 @@ router.get("/", async (req, res) => {
 router.get("/:id", async (req, res) => {
   try {
     const id = req.params.id;
-    const result = await studentCollection.find({ _id: new ObjectId(id) });
+    const result = await studentCollection.findOne({ _id: new ObjectId(id) });
     res.send({
       success: true,
       message: "Successfully retrieved data",
