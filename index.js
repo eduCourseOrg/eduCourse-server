@@ -1,11 +1,10 @@
-import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
-dotenv.config();
+import express from "express";
 import courseRoutes from "./Routes/courseRouter.js";
 import instructorRouter from "./Routes/instructorRouter.js";
 import studentRouter from "./Routes/studentRouter.js";
-import { isAdmin } from "./Middlewares/index.js";
+dotenv.config();
 
 const port = process.env.PORT || 5000;
 
@@ -19,6 +18,8 @@ app.get("/", (req, res) => {
 app.use("/courses", courseRoutes);
 app.use("/instructors", instructorRouter);
 app.use("/students", studentRouter);
+app.use("/uploads", express.static("uploads"));
+
 
 app.all("*", (req, res, next) => {
   return res
