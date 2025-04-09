@@ -1,12 +1,10 @@
-import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
-dotenv.config();
+import express from "express";
 import courseRoutes from "./Routes/courseRouter.js";
 import instructorRouter from "./Routes/instructorRouter.js";
 import studentRouter from "./Routes/studentRouter.js";
-import videoRouter from "./Routes/videoRouter.js";
-import { isAdmin } from "./Middlewares/index.js";
+dotenv.config();
 
 import bodyParser from "body-parser";
 const port = process.env.PORT || 5000;
@@ -23,43 +21,11 @@ app.get("/", (req, res) => {
 app.use("/courses", courseRoutes);
 app.use("/instructors", instructorRouter);
 app.use("/students", studentRouter);
-app.use("/videos", videoRouter);
+app.use("/uploads", express.static("uploads"));
 
-// app.all("*", (req, res, next) => {
-//   return res
-//     .status(500)
-//     .json({ message: "Server is shutting down due to unauthorized access" })
-//     .end(
-//       () =>
-//         res.status(500).send({
-//           message: "Internal Server Error!",
-//         })
-//       // server.close(() => {
-//       //   console.log("Server closed due to unauthorized access.");
-//       //   process.exit(1);
-//       //   // setTimeout(() => {
-//       //   //   console.log("Restarting server...");
-//       //   //   const { spawn } = require("child_process");
-//       //   //   const nodemon = spawn("nodemon", ["index.js"]);
 
-//       //   //   nodemon.stdout.on("data", (data) => {
-//       //   //     console.log(`stdout: ${data}`);
-//       //   //   });
-
-//       //   //   nodemon.stderr.on("data", (data) => {
-//       //   //     console.error(`stderr: ${data}`);
-//       //   //   });
-
-//       //   //   nodemon.on("close", (code) => {
-//       //   //     console.log(`child process exited with code ${code}`);
-//       //   //   });
-//       //   // }, 10000);
-//       // })
-//     );
-// });
-
-app.all("*", (req, res) => {
-  res
+app.all("*", (req, res, next) => {
+  return res
     .status(500)
     .json({ message: "Server is shutting down due to unauthorized access" });
 });
