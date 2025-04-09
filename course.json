@@ -1,0 +1,90 @@
+[
+  {
+    "courseTitle": "Modern Web Development with MERN",
+    "courseDescription": "Learn to build full-stack web applications using MongoDB, Express, React, and Node.js.",
+    "category": "Web Development",
+    "level": "Intermediate",
+    "price": 49.99,
+    "discountPrice": 1,
+    "thumbnail": "https://example.com/course-thumbnail.jpg",
+    "instructorId": 193124644276325784,
+    "courseView": [{ "date": "string", "view": 25 }],
+    "like": 101,
+    "comments": [
+      {
+        "studentId": 50,
+        "comment": "string",
+        "date": "10.02.2025"
+      }
+    ],
+    "reviews": [
+      {
+        "studentId": 50,
+        "rating": 4,
+        "comment": "string",
+        "date": "10.02.2025"
+      }
+    ],
+    "enrolledStudents": [{ "studentId": 15, "date": "10.02.2025" }],
+    "status": "Active",
+    "audioLanguage": "English",
+    "modules": [
+      {
+        "moduleTitle": "Introduction to MERN Stack",
+        "moduleDescription": "Overview of the MERN stack and its components.",
+        "lessons": [
+          {
+            "title": "What is the MERN Stack?",
+            "description": "agfuiysdfgdsjfjdsfjdsfut",
+            "videoURL": "https://example.com/videos/mern-intro.mp4",
+            "duration": "10:30",
+            "resources": "referance",
+            "quiz": {
+              "questions": [
+                {
+                  "question": "What does MERN stand for?",
+                  "options": [
+                    "MongoDB, Express, React, Node.js",
+                    "MongoDB, Express, Ruby, Node.js",
+                    "MongoDB, Elasticsearch, Node.js",
+                    "MongoDB, Elasticsearch, React, Node.js"
+                  ],
+                  "correctAnswer": "MongoDB, Express, React, Node.js"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "moduleTitle": "Introduction to MERN Stack",
+        "moduleDescription": "Overview of the MERN stack and its components.",
+        "lessons": [
+          {
+            "title": "What is the MERN Stack?",
+            "description": "agfuiysdfgdsjfjdsfjdsfut",
+            "videoURL": "https://example.com/videos/mern-intro.mp4",
+            "duration": "10:30",
+            "resources": "referance",
+            "quiz": {
+              "questions": [
+                {
+                  "question": "What does MERN stand for?",
+                  "options": [
+                    "MongoDB, Express, React, Node.js",
+                    "MongoDB, Express, Ruby, Node.js",
+                    "MongoDB, Elasticsearch, Node.js",
+                    "MongoDB, Elasticsearch, React, Node.js"
+                  ],
+                  "correctAnswer": "MongoDB, Express, React, Node.js"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "createdAt": "2025-02-27T10:00:00Z",
+    "updatedAt": "2025-02-27T10:00:00Z"
+  }
+]

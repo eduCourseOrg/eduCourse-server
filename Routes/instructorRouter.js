@@ -21,6 +21,7 @@ router.get("/", async (req, res) => {
 router.get("/:id", async (req, res) => {
   try {
     const id = req.params.id;
+    console.log(id, "instructor id");
     const result = await instructorCollection.findOne({
       _id: new ObjectId(id),
     });
