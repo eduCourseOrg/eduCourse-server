@@ -23,7 +23,6 @@ app.use("/instructors", instructorRouter);
 app.use("/students", studentRouter);
 app.use("/uploads", express.static("uploads"));
 
-
 app.all("*", (req, res, next) => {
   return res
     .status(500)
@@ -32,7 +31,7 @@ app.all("*", (req, res, next) => {
 
 process.on("SIGINT", async () => {
   console.log("Shutting down...");
-  // await client.close();
+  await server.close();
   process.exit(0);
 });
 
