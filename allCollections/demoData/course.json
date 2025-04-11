@@ -36,7 +36,7 @@
           {
             "title": "What is the MERN Stack?",
             "description": "Learn the basics of MERN stack.",
-            "videoURL": "https://example.com/videos/mern-intro.mp4",
+            "videoURL": "https://www.youtube.com/watch?v=98BzS5Oz5E4",
             "duration": "10:30",
             "resources": "Reference links",
             "quiz": {
@@ -110,7 +110,7 @@
           {
             "title": "Understanding Data",
             "description": "Basics of data science and its applications.",
-            "videoURL": "https://example.com/videos/data-intro.mp4",
+            "videoURL": "https://www.youtube.com/watch?v=lSwIe0TMUhc",
             "duration": "12:15",
             "resources": "Reference links",
             "quiz": {
@@ -179,7 +179,7 @@
           {
             "title": "Introduction to Supervised Learning",
             "description": "Overview of regression and classification models.",
-            "videoURL": "https://example.com/videos/ml-intro.mp4",
+            "videoURL": "https://www.youtube.com/watch?v=W01tIRP_Rqs",
             "duration": "14:20",
             "resources": "Reference links",
             "quiz": {
@@ -253,7 +253,7 @@
           {
             "title": "Basics of Network Security",
             "description": "Understanding firewalls, VPNs, and encryption.",
-            "videoURL": "https://example.com/videos/cybersecurity-intro.mp4",
+            "videoURL": "https://www.youtube.com/watch?v=_IOZ8_cPgu8",
             "duration": "13:45",
             "resources": "Reference links",
             "quiz": {
@@ -297,7 +297,7 @@
     "level": "Beginner",
     "price": 39.99,
     "discountPrice": 29.99,
-    "thumbnail": "https://i.ibb.co.com/6RGBq1Rz/course-banner-1.jpg",
+    "thumbnail": "https://i.ibb.co.com/pBNw2J2R/course-banner-5.jpg",
     "instructorId": 123456789,
     "courseView": [{ "date": "2025-03-05", "view": 120 }],
     "like": 85,
@@ -327,7 +327,7 @@
           {
             "title": "Setting up Django",
             "description": "Step-by-step guide to setting up a Django project.",
-            "videoURL": "https://example.com/videos/django-setup.mp4",
+            "videoURL": "https://www.youtube.com/watch?v=VuETrwKYLTM",
             "duration": "15:00",
             "resources": "Installation guide",
             "quiz": {
@@ -371,7 +371,7 @@
     "level": "Expert",
     "price": 59.99,
     "discountPrice": 39.99,
-    "thumbnail": "https://i.ibb.co.com/sv2r5c3g/course-banner-2.jpg",
+    "thumbnail": "https://i.ibb.co.com/Xkr2PwjG/course-banner-6.jpg",
     "instructorId": 987654321,
     "courseView": [{ "date": "2025-03-05", "view": 300 }],
     "like": 230,
@@ -401,7 +401,7 @@
           {
             "title": "Understanding the Singleton Pattern",
             "description": "How to use the Singleton pattern in JavaScript.",
-            "videoURL": "https://example.com/videos/singleton-pattern.mp4",
+            "videoURL": "https://www.youtube.com/watch?v=CWkD2kP6Wug",
             "duration": "20:00",
             "resources": "Pattern guide",
             "quiz": {
@@ -445,7 +445,7 @@
     "level": "Beginner",
     "price": 29.99,
     "discountPrice": 19.99,
-    "thumbnail": "https://i.ibb.co.com/99WdpzNg/course-banner-3.jpg",
+    "thumbnail": "https://i.ibb.co.com/yFLZRw9c/course-banner-7.jpg",
     "instructorId": 456789123,
     "courseView": [{ "date": "2025-03-05", "view": 150 }],
     "like": 120,
@@ -475,7 +475,7 @@
           {
             "title": "Setting up React Project",
             "description": "How to set up a React development environment.",
-            "videoURL": "https://example.com/videos/react-setup.mp4",
+            "videoURL": "https://www.youtube.com/watch?v=SqcY0GlETPk&t=297s",
             "duration": "12:00",
             "resources": "React setup guide",
             "quiz": {
@@ -549,7 +549,7 @@
           {
             "title": "What is Machine Learning?",
             "description": "Overview of machine learning and its applications.",
-            "videoURL": "https://example.com/videos/machine-learning.mp4",
+            "videoURL": "https://www.youtube.com/watch?v=ukzFI9rgwfU",
             "duration": "18:00",
             "resources": "Intro to machine learning",
             "quiz": {
@@ -623,7 +623,7 @@
           {
             "title": "Data Cleaning and Preprocessing",
             "description": "Techniques for cleaning and preparing data.",
-            "videoURL": "https://example.com/videos/data-cleaning.mp4",
+            "videoURL": "https://www.youtube.com/watch?v=tDu_KIlXaB0",
             "duration": "22:00",
             "resources": "Data preprocessing guide",
             "quiz": {
@@ -697,7 +697,7 @@
           {
             "title": "Setting up Python",
             "description": "Learn how to install and set up Python on your machine.",
-            "videoURL": "https://example.com/videos/python-setup.mp4",
+            "videoURL": "https://www.youtube.com/watch?v=YKSpANU8jPE",
             "duration": "10:00",
             "resources": "Python installation guide",
             "quiz": {
@@ -771,7 +771,7 @@
           {
             "title": "Setting Up Tableau",
             "description": "Learn how to install Tableau and connect to your data sources.",
-            "videoURL": "https://example.com/videos/tableau-setup.mp4",
+            "videoURL": "https://www.youtube.com/watch?v=6xv1KvCMF1Q",
             "duration": "15:00",
             "resources": "Tableau installation guide",
             "quiz": {
@@ -845,7 +845,7 @@
           {
             "title": "Setting Up Your AWS Account",
             "description": "Learn how to set up an AWS account and access the AWS Management Console.",
-            "videoURL": "https://example.com/videos/aws-setup.mp4",
+            "videoURL": "https://www.youtube.com/watch?v=CjKhQoYeR4Q&t=938s",
             "duration": "20:00",
             "resources": "AWS setup guide",
             "quiz": {

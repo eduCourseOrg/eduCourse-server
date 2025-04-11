@@ -10,6 +10,7 @@ const client = new MongoClient(uri, {
     deprecationErrors: true,
   },
 });
+console.log(uri);
 
 export const courseCollection = client.db("eduCourse").collection("courses");
 export const studentCollection = client.db("eduCourse").collection("students");
