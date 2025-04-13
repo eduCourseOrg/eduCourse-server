@@ -15,10 +15,7 @@ export const isAdmin = (req, res, next) => {
   });
 };
 
-
-
 export const errorHandler = (err, res) => {
-
   let status = err.status || 500;
 
   if (err.name === "ValidationError") {
@@ -32,7 +29,7 @@ export const errorHandler = (err, res) => {
   const stackTrace = err.stack;
   const lines = stackTrace.split("\n");
   const errorLine = lines[1];
-  const match = errorLine.match(/^(.*?):(\d+):(\d+)$/); 
+  const match = errorLine.match(/^(.*?):(\d+):(\d+)$/);
 
   const stack = {};
 
@@ -41,18 +38,16 @@ export const errorHandler = (err, res) => {
     const lineNumber = match[2];
     const columnNumber = match[3];
     stack.Path = path;
-    stack.LineNumber = lineNumber,
-    stack.columnNumber = columnNumber
+    (stack.LineNumber = lineNumber), (stack.columnNumber = columnNumber);
   } else {
-    stack.Path = "Could not found path and line number"
+    stack.Path = "Could not found path and line number";
   }
 
- return res.status(status).json({
-   message: err.message || "Internal Server Error",
-   error: {
-     name: err.name,
-     stack
-   },
- });
+  return res.status(status).json({
+    message: err.message || "Internal Server Error",
+    error: {
+      name: err.name,
+      stack,
+    },
+  });
 };
-

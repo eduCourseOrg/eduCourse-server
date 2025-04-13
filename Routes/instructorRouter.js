@@ -84,6 +84,7 @@ router.post("/", upload.fields([{ name: "profile" }, { name: "resume" }]), async
 router.get("/:id", async (req, res) => {
   try {
     const id = req.params.id;
+    console.log(id, "instructor id");
     const result = await instructorCollection.findOne({
       _id: new ObjectId(id),
     });
