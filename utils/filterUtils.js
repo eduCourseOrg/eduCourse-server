@@ -31,16 +31,16 @@ export const buildCourseFilter = ({
 
   // 🔍 Search filter (checks multiple fields)
   if (searchTerm) {
-    filter.$or = [
-      { title: { $regex: searchTerm, $options: "i" } },
-      { description: { $regex: searchTerm, $options: "i" } },
-      { category: { $regex: searchTerm, $options: "i" } },
-    ];
+    const regex = new RegExp(searchTerm, "i");
+    filter.$or = [{ name: regex }, { description: regex }, { category: regex }];
   }
 
   // Dropdown single category
   if (selectedCategory && selectedCategory !== "All Categories") {
-    filter.category = selectedCategory;
+    const categoriesArray = Array.isArray(selectedCategory)
+      ? selectedCategory
+      : [selectedCategory];
+    filter.category = { $in: categoriesArray };
   }
 
   // Checkbox categories (multi)

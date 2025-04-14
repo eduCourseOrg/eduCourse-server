@@ -4,6 +4,7 @@ const router = express.Router();
 
 import { courseCollection } from "../allCollections/index.js";
 import { errorHandler } from "../Middlewares/index.js";
+import { buildCourseFilter } from "../utils/filterUtils.js";
 
 // router.get("/", async (req, res) => {
 //   try {
@@ -17,7 +18,7 @@ import { errorHandler } from "../Middlewares/index.js";
 //     errorHandler(error, res);
 //   }
 // });
-router.get("/courses", async (req, res) => {
+router.get("/", async (req, res) => {
   try {
     const {
       searchTerm = "",
