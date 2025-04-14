@@ -1,10 +1,11 @@
 import jwt from "jsonwebtoken";
+
 import dotenv from "dotenv";
 dotenv.config();
 
 export const isAdmin = (req, res, next) => {
   const token = req.headers.authorization?.split(" ")[1];
-
+console.log("inside isAdmin middleware")
   if (!token) return res.status(401).json({ message: "Unauthorized" });
 
   jwt.verify(token, process.env.SECURITY_KEY, (err, user) => {
