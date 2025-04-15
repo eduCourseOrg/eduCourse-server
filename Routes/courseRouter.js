@@ -29,6 +29,8 @@ router.get("/", async (req, res) => {
       limit = 10,
     } = req.query;
 
+    // console.log(req.query);
+
     const pageInt = parseInt(page);
     const limitInt = parseInt(limit);
     const skip = (pageInt - 1) * limitInt;
@@ -39,6 +41,8 @@ router.get("/", async (req, res) => {
       selectedCheckboxes,
       selectedLevelCheckboxes
     );
+
+    console.log("Filter:", filter); // Log the filter object
 
     const [courses, totalCount] = await Promise.all([
       courseCollection.find(filter).skip(skip).limit(limitInt).toArray(),

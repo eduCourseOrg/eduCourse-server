@@ -21,12 +21,12 @@ const buildSort = (sortBy) => {
 
 export { buildFilter, buildSort };
 
-export const buildCourseFilter = ({
+const buildCourseFilter = (
   searchTerm,
   selectedCategory,
   selectedCheckboxes,
-  selectedLevelCheckboxes,
-}) => {
+  selectedLevelCheckboxes
+) => {
   const filter = {};
 
   // 🔍 Search filter (checks multiple fields)
@@ -34,8 +34,6 @@ export const buildCourseFilter = ({
     const regex = new RegExp(searchTerm, "i");
     filter.$or = [{ name: regex }, { description: regex }, { category: regex }];
   }
-
-
 
   // Dropdown single category
   // if (selectedCategory && selectedCategory !== "All Categories") {
@@ -55,11 +53,11 @@ export const buildCourseFilter = ({
   if (selectedCategory && selectedCategory !== "All Categories") {
     combinedCategories.push(selectedCategory);
   }
-  
+
   if (selectedCheckboxes) {
     combinedCategories.push(...selectedCheckboxes.split(","));
   }
-  
+
   if (combinedCategories.length > 0) {
     filter.category = { $in: combinedCategories };
   }
@@ -72,3 +70,5 @@ export const buildCourseFilter = ({
 
   return filter;
 };
+
+export { buildCourseFilter };

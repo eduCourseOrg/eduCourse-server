@@ -23,7 +23,7 @@ const storage = multer.diskStorage({
       file.fieldname + "-" + uniqueSuffix + path.extname(file.originalname)
     );
   },
-});// File filter to check valid file types
+}); // File filter to check valid file types
 const fileFilter = (req, file, cb) => {
   const allowedImageTypes = [
     "image/jpeg",
@@ -82,12 +82,14 @@ router.get("/", async (req, res) => {
       page = 1,
       limit = 10,
     } = req.query;
+    // console.log(req.query);
 
     const pageInt = parseInt(page);
     const limitInt = parseInt(limit);
     const skip = (pageInt - 1) * limitInt;
 
     const filter = buildFilter(searchTerm, selectedSkills);
+    console.log(filter);
     const sort = buildSort(sortBy);
 
     const [instructors, totalCount] = await Promise.all([
