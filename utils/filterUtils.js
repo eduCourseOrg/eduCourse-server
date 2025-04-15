@@ -35,18 +35,33 @@ export const buildCourseFilter = ({
     filter.$or = [{ name: regex }, { description: regex }, { category: regex }];
   }
 
+
+
   // Dropdown single category
-  if (selectedCategory && selectedCategory !== "All Categories") {
-    const categoriesArray = Array.isArray(selectedCategory)
-      ? selectedCategory
-      : [selectedCategory];
-    filter.category = { $in: categoriesArray };
-  }
+  // if (selectedCategory && selectedCategory !== "All Categories") {
+  //   const categoriesArray = Array.isArray(selectedCategory)
+  //     ? selectedCategory
+  //     : [selectedCategory];
+  //   filter.category = { $in: categoriesArray };
+  // }
 
   // Checkbox categories (multi)
+  // if (selectedCheckboxes) {
+  //   const categories = selectedCheckboxes.split(",");
+  //   filter.category = { $in: categories };
+  // }
+  // Combine dropdown + checkbox categories
+  const combinedCategories = [];
+  if (selectedCategory && selectedCategory !== "All Categories") {
+    combinedCategories.push(selectedCategory);
+  }
+  
   if (selectedCheckboxes) {
-    const categories = selectedCheckboxes.split(",");
-    filter.category = { $in: categories };
+    combinedCategories.push(...selectedCheckboxes.split(","));
+  }
+  
+  if (combinedCategories.length > 0) {
+    filter.category = { $in: combinedCategories };
   }
 
   // Level checkboxes (multi)
