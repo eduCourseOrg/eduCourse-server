@@ -1,7 +1,7 @@
 import dotenv from "dotenv";
 dotenv.config();
 
-import { MongoClient, ServerApiVersion, GridFSBucket } from "mongodb";
+import { GridFSBucket, MongoClient, ServerApiVersion } from "mongodb";
 const uri = process.env.DB_URI;
 const client = new MongoClient(uri, {
   serverApi: {
@@ -10,6 +10,7 @@ const client = new MongoClient(uri, {
     deprecationErrors: true,
   },
 });
+
 export const courseCollection = client.db("eduCourse").collection("courses");
 export const studentCollection = client.db("eduCourse").collection("students");
 export const instructorCollection = client
