@@ -31,6 +31,11 @@ router.get("/courses", async (req, res) => {
       courseCollection.countDocuments(filter),
     ]);
     res.status(200).json({
+try {
+  router.get("/courses",isAdmin, async (req, res) => {
+    console.log("inside courses where i use mid isAdmin",req.cookies)
+    const result = await courseCollection.find({}).toArray();
+    res.send({
       success: true,
       message: "Course data retrieved successfully",
       data: courses,

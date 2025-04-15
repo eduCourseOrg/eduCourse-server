@@ -23,9 +23,7 @@ const storage = multer.diskStorage({
       file.fieldname + "-" + uniqueSuffix + path.extname(file.originalname)
     );
   },
-});
-
-// File filter to check valid file types
+});// File filter to check valid file types
 const fileFilter = (req, file, cb) => {
   const allowedImageTypes = [
     "image/jpeg",
