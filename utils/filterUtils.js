@@ -8,7 +8,7 @@ const buildFilter = (searchTerm, selectedSkills) => {
     const skillsArray = Array.isArray(selectedSkills)
       ? selectedSkills
       : [selectedSkills];
-    filter["bio.skills"] = { $in: skillsArray };
+    filter["skills.category"] = { $in: skillsArray };
   }
   return filter;
 };
@@ -35,6 +35,24 @@ const buildCourseFilter = (
     filter.$or = [{ name: regex }, { description: regex }, { category: regex }];
   }
 
+  const combinedCategories = [];
+  if (selectedCategory && selectedCategory !== "All Categories") {
+    combinedCategories.push(selectedCategory);
+  }
+
+  if (selectedCheckboxes) {
+    combinedCategories.push(...selectedCheckboxes.split(","));
+  }
+
+  if (combinedCategories.length > 0) {
+    filter.category = { $in: combinedCategories };
+  }
+    // Level checkboxes (multi)
+    if (selectedLevelCheckboxes.length) {
+      const levels = selectedLevelCheckboxes.split(",");
+      filter.courseLevel = { $in: levels };
+    }
+
   // Dropdown single category
   // if (selectedCategory && selectedCategory !== "All Categories") {
   //   const categoriesArray = Array.isArray(selectedCategory)
@@ -49,26 +67,12 @@ const buildCourseFilter = (
   //   filter.category = { $in: categories };
   // }
   // Combine dropdown + checkbox categories
-  const combinedCategories = [];
-  if (selectedCategory && selectedCategory !== "All Categories") {
-    combinedCategories.push(selectedCategory);
-  }
 
-  if (selectedCheckboxes) {
-    combinedCategories.push(...selectedCheckboxes.split(","));
-  }
 
-  if (combinedCategories.length > 0) {
-    filter.category = { $in: combinedCategories };
-  }
 
-  // Level checkboxes (multi)
-  if (selectedLevelCheckboxes) {
-    const levels = selectedLevelCheckboxes.split(",");
-    filter.courseLevel = { $in: levels };
-  }
 
   return filter;
 };
 
 export { buildCourseFilter };
+

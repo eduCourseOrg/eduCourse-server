@@ -41,29 +41,74 @@ router.get("/", async (req, res) => {
       selectedCheckboxes,
       selectedLevelCheckboxes
     );
+//aggrigation method Start for separate category query
 
+console.log("aggriatae",filter)
+const result= await courseCollection.aggregate([
+
+{
+  $facet:{
+    courses:[
+      {$match:filter},
+      {$skip:skip},
+      {$limit:limitInt},
+      {
+        $project:{
+          name:1,
+          category:1,
+          courseLevel:1,
+          description:1,
+          ratings:1,
+          enrolledCount:1,
+       
+          
+          //you can add more fields here if you want
+        },
+      },
+    ],
+    totalCount:[
+      {$match:filter},
+      {$count:"count"},
+    ],
+    allCategories:[
+      {$group:{_id:"$category"}},
+      {$project:{category:"$_id",_id:0}},
+    ],
+    allLevels:[
+      {$group:{_id:"$courseLevel"}},
+      {$project:{level:"$_id",_id:0}},
+    ],
+  },
+  
+},
+]).toArray()
+console.log("result",result)
+//aggrigation method end for separate category query
     console.log("Filter:", filter); // Log the filter object
 
-    const [courses, totalCount] = await Promise.all([
-      courseCollection.find(filter).skip(skip).limit(limitInt).toArray(),
-      courseCollection.countDocuments(filter),
-    ]);
+    const {courses, totalCount,allCategories,allLevels} =result[0]
+   
+
+    const total = totalCount[0]?.count || 0;
     res.status(200).json({
       success: true,
       message: "Course data retrieved successfully",
       data: courses,
+      categories:(allCategories ??[]).map(c=>c.category),//always full category list,
+      levels:(allLevels ??[]).map(l=>l.level),//always full category list,
+      total:totalCount[0]?.count||0,
       pagination: {
-        totalCount: totalCount,
+        totalCount: total,
         page: pageInt,
         limit: limitInt,
         totalPages: Math.ceil(totalCount / limitInt),
       },
     });
   } catch (error) {
-    console.error(`Error fetching instructors: ${error.message}`);
+    console.error(`Error fetching Courses: ${error.message}`);
     res.status(500).json({
       success: false,
-      message: "Error fetching instructors",
+      message: "Error fetching Courses",
     });
   }
 });

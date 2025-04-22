@@ -3,12 +3,14 @@ import cors from "cors";
 import dotenv from "dotenv";
 import express from "express";
 import jwt from "jsonwebtoken";
-import courseRoutes from "./Routes/courseRouter.js";
+import aggCourseRoute from "./Routes/aggCourseRoute.js";
 import instructorRouter from "./Routes/instructorRouter.js";
 import studentRouter from "./Routes/studentRouter.js";
+
 dotenv.config();
 
 import bodyParser from "body-parser";
+
 const port = process.env.PORT || 5000;
 
 const app = express();
@@ -27,7 +29,8 @@ app.use(bodyParser.urlencoded({ extended: true, limit: "100mb" }));
 app.get("/", (req, res) => {
   res.send("Your eduCourse server is running");
 });
-app.use("/courses", courseRoutes);
+// app.use("/courses", courseRoutes);
+app.use("/courses", aggCourseRoute);
 app.use("/instructors", instructorRouter);
 app.use("/students", studentRouter);
 app.use("/uploads", express.static("uploads"));

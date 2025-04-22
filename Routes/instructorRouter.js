@@ -92,22 +92,81 @@ router.get("/", async (req, res) => {
     console.log(filter);
     const sort = buildSort(sortBy);
 
-    const [instructors, totalCount] = await Promise.all([
-      instructorCollection
-        .find(filter)
-        .sort(sort)
-        .skip(skip)
-        .limit(limitInt)
-        .toArray(),
-      instructorCollection.countDocuments(filter),
-    ]);
+    console.log("aggriatae",filter)
+    const result= await instructorCollection.aggregate([
+    
+    {
+      $facet:{
+        paginationResults:[
+          {$match:filter},
+          {$skip:skip},
+          { $sort: { ratings: -1 } },
+          {$limit:limitInt},
+          {
+            $project:{
+              name:1,
+              image:1,
+              dob:1,
+              gender:1, 
+              totalEnrolledStudents:1,
+              yearsOfExperience:1,
+              skills:1,
+              profession:1,
+              socialLinks:1,
+              //you can add more fields here if you want
+            },
+          },
+        ],
+        totalCount:[
+          {$match:filter},
+          {$count:"count"},
+        ],
+        allSkill:[
+          { $unwind: "$skills" },
+          { $group: { _id: "$skills.category" } },
+          { $sort: { _id: 1 } }, // Optional: sort alphabetically
+          {
+            $project: {
+              _id: 0,          
+              label: "$_id"
+            }
+          }
+
+         
+          
+         
+         
+        ],
+      },
+      
+    },
+    ]).toArray()
+
+    const {paginationResults, totalCount,allSkill} =result[0]
+
+    // const [instructors, totalCount] = await Promise.all([
+    //   instructorCollection
+    //     .find(filter)
+    //     .sort(sort)
+    //     .skip(skip)
+    //     .limit(limitInt)
+    //     .toArray(),
+    //   instructorCollection.countDocuments(filter),
+    // ]);
+    const total = totalCount[0]?.count || 0;
     res.status(200).json({
       success: true,
       message: "Instructors data retrieved successfully",
-      data: instructors,
+      data: paginationResults,
+      filterOptions: {
+        skills:(allSkill||[])
+      },
+      
+      total:totalCount[0]?.count||0,
       pagination: {
         totalCount: totalCount,
         page: pageInt,
+        
         limit: limitInt,
         totalPages: Math.ceil(totalCount / limitInt),
       },
