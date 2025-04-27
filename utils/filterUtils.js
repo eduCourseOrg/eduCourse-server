@@ -2,22 +2,27 @@ const buildFilter = (searchTerm, selectedSkills) => {
   const filter = {};
   if (searchTerm) {
     const regex = new RegExp(searchTerm, "i");
-    filter.$or = [{ name: regex }, { email: regex }, { "bio.skills": regex }];
+    filter.$or = [{ name: regex }, { email: regex },{ "profession.designation": regex }, { "skills.category": regex }];
   }
   if (selectedSkills && selectedSkills !== "All Skills") {
     const skillsArray = Array.isArray(selectedSkills)
       ? selectedSkills
       : [selectedSkills];
-    filter["skills.category"] = { $in: skillsArray };
+    filter['skills.category']= { $in: skillsArray };
+   
   }
   return filter;
+  
 };
 
 const buildSort = (sortBy) => {
-  if (sortBy === "Ascending") return { ratings: 1 };
-  if (sortBy === "Descending") return { ratings: -1 };
-  return {};
+  
+  if (!sortBy) return {}; // Default: no sorting
+  const [field, order] = sortBy.split(':');
+  if (!field || !['asc', 'desc'].includes(order)) return {};
+  return { [field]: order === 'asc' ? 1 : -1 };
 };
+
 
 export { buildFilter, buildSort };
 
@@ -48,9 +53,9 @@ const buildCourseFilter = (
     filter.category = { $in: combinedCategories };
   }
     // Level checkboxes (multi)
-    if (selectedLevelCheckboxes.length) {
+    if (selectedLevelCheckboxes.length > 0) {
       const levels = selectedLevelCheckboxes.split(",");
-      filter.courseLevel = { $in: levels };
+      filter.level = { $in: levels };
     }
 
   // Dropdown single category

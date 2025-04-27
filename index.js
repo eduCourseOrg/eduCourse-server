@@ -3,7 +3,7 @@ import cors from "cors";
 import dotenv from "dotenv";
 import express from "express";
 import jwt from "jsonwebtoken";
-import aggCourseRoute from "./Routes/aggCourseRoute.js";
+import courseRouter from "./Routes/courseRouter.js";
 import instructorRouter from "./Routes/instructorRouter.js";
 import studentRouter from "./Routes/studentRouter.js";
 
@@ -30,7 +30,7 @@ app.get("/", (req, res) => {
   res.send("Your eduCourse server is running");
 });
 // app.use("/courses", courseRoutes);
-app.use("/courses", aggCourseRoute);
+app.use("/courses", courseRouter);
 app.use("/instructors", instructorRouter);
 app.use("/students", studentRouter);
 app.use("/uploads", express.static("uploads"));

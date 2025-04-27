@@ -6,112 +6,104 @@ import { courseCollection } from "../allCollections/index.js";
 import { errorHandler } from "../Middlewares/index.js";
 import { buildCourseFilter } from "../utils/filterUtils.js";
 
-// router.get("/", async (req, res) => {
-//   try {
-//     const result = await courseCollection.find({}).toArray();
-//     res.send({
-//       success: true,
-//       message: "Successfully retrieved data",
-//       data: result,
-//     });
-//   } catch (error) {
-//     errorHandler(error, res);
-//   }
-// });
+
 router.get("/", async (req, res) => {
-  try {
-    const {
-      searchTerm = "",
-      selectedCategory = "",
-      selectedCheckboxes = "",
-      selectedLevelCheckboxes = "",
-      page = 1,
-      limit = 10,
-    } = req.query;
-
-    // console.log(req.query);
-
-    const pageInt = parseInt(page);
-    const limitInt = parseInt(limit);
-    const skip = (pageInt - 1) * limitInt;
-
-    const filter = buildCourseFilter(
-      searchTerm,
-      selectedCategory,
-      selectedCheckboxes,
-      selectedLevelCheckboxes
-    );
-//aggrigation method Start for separate category query
-
-console.log("aggriatae",filter)
-const result= await courseCollection.aggregate([
-
-{
-  $facet:{
-    courses:[
-      {$match:filter},
-      {$skip:skip},
-      {$limit:limitInt},
-      {
-        $project:{
-          name:1,
-          category:1,
-          courseLevel:1,
-          description:1,
-          ratings:1,
-          enrolledCount:1,
-       
-          
-          //you can add more fields here if you want
-        },
-      },
-    ],
-    totalCount:[
-      {$match:filter},
-      {$count:"count"},
-    ],
-    allCategories:[
-      {$group:{_id:"$category"}},
-      {$project:{category:"$_id",_id:0}},
-    ],
-    allLevels:[
-      {$group:{_id:"$courseLevel"}},
-      {$project:{level:"$_id",_id:0}},
-    ],
-  },
+    try {
+      const {
+        searchTerm = "",
+        selectedCategory = "",
+        selectedCheckboxes = "",
+        selectedLevelCheckboxes = "",
+        page = 1,
+        limit = 10,
+      } = req.query;
   
-},
-]).toArray()
-console.log("result",result)
-//aggrigation method end for separate category query
-    console.log("Filter:", filter); // Log the filter object
-
-    const {courses, totalCount,allCategories,allLevels} =result[0]
-   
-
-    const total = totalCount[0]?.count || 0;
-    res.status(200).json({
-      success: true,
-      message: "Course data retrieved successfully",
-      data: courses,
-      categories:(allCategories ??[]).map(c=>c.category),//always full category list,
-      levels:(allLevels ??[]).map(l=>l.level),//always full category list,
-      total:totalCount[0]?.count||0,
-      pagination: {
-        totalCount: total,
-        page: pageInt,
-        limit: limitInt,
-        totalPages: Math.ceil(totalCount / limitInt),
-      },
-    });
-  } catch (error) {
-    console.error(`Error fetching Courses: ${error.message}`);
-    res.status(500).json({
-      success: false,
-      message: "Error fetching Courses",
-    });
-  }
-});
+      const pageInt = parseInt(page);
+      const limitInt = parseInt(limit);
+      const skip = (pageInt - 1) * limitInt;
+  
+      const filter = buildCourseFilter(
+        searchTerm,
+        selectedCategory,
+        selectedCheckboxes,
+        selectedLevelCheckboxes
+      );
+  
+      // Run aggregation with independent facets
+      const result = await courseCollection.aggregate([
+        {
+          $facet: {
+            // Filtered results for pagination
+            paginatedResults: [
+              { $match: filter },
+              { $skip: skip },
+              { $limit: limitInt },
+              {
+                $project: {
+                  courseTitle: 1,
+                  category: 1,
+                  thumbnail: 1,
+                  level: 1,
+                  sales:1,
+                  discountPrice:1,
+                  "sub-category":1,
+                  description: 1,
+                  ratings: 1,
+                  enrolledCount: 1,
+                  banner: 1,
+                  // Include other fields you need
+                },
+              },
+            ],
+            // Total count for pagination (uses the same filter)
+            totalCount: [
+              { $match: filter },
+              { $count: "count" },
+            ],
+            // All categories (unfiltered)
+            allCategories: [
+              { $group: { _id: "$category" } },
+              { $sort: { _id: 1 } }, // Optional: sort alphabetically
+              { $project: { _id: 0, value: "$_id", label: "$_id" } }, // Better format for frontend
+            ],
+            // All levels (unfiltered)
+            allLevels: [
+              { $group: { _id: "$level" } },
+              { $sort: { _id: 1 } }, // Optional: sort alphabetically
+              { $project: { _id: 0, value: "$_id", label: "$_id" } }, // Better format for frontend
+            ],
+          },
+        },
+      ]).toArray();
+  
+      const { paginatedResults, totalCount, allCategories, allLevels } = result[0];
+      const total = totalCount[0]?.count || 0;
+      const totalPages = Math.ceil(total / limitInt);
+  
+      res.status(200).json({
+        success: true,
+        message: "Course data retrieved successfully",
+        data: paginatedResults,
+        filterOptions: {
+          categories: allCategories || [],
+          levels: allLevels || [],
+        },
+        pagination: {
+          totalCount: total,
+          page: pageInt,
+          limit: limitInt,
+          totalPages,
+        },
+      });
+    } catch (error) {
+      console.error(`Error fetching Courses: ${error.message}`);
+      res.status(500).json({
+        success: false,
+        message: "Error fetching Courses",
+        error: process.env.NODE_ENV === 'development' ? error.message : undefined,
+      });
+    }
+  });
 
 router.get("/:id", async (req, res) => {
   try {
@@ -128,3 +120,7 @@ router.get("/:id", async (req, res) => {
 });
 
 export default router;
+
+
+
+  

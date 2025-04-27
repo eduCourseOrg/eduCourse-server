@@ -77,20 +77,22 @@ router.get("/", async (req, res) => {
   try {
     const {
       searchTerm = "",
-      selectedSkills = "",
-      sortBy = "",
+      selectedSkill = "",
+      sortBy = 'ratings:desc',
       page = 1,
       limit = 10,
     } = req.query;
     // console.log(req.query);
+    console.log(sortBy,"sortBy")
 
+   
     const pageInt = parseInt(page);
     const limitInt = parseInt(limit);
     const skip = (pageInt - 1) * limitInt;
-
-    const filter = buildFilter(searchTerm, selectedSkills);
-    console.log(filter);
     const sort = buildSort(sortBy);
+    const filter = buildFilter(searchTerm, selectedSkill);
+    console.log("build-Filter",filter);
+    
 
     console.log("aggriatae",filter)
     const result= await instructorCollection.aggregate([
@@ -100,7 +102,7 @@ router.get("/", async (req, res) => {
         paginationResults:[
           {$match:filter},
           {$skip:skip},
-          { $sort: { ratings: -1 } },
+          { $sort: sort }, // Apply dynamic sorting
           {$limit:limitInt},
           {
             $project:{
@@ -112,18 +114,20 @@ router.get("/", async (req, res) => {
               yearsOfExperience:1,
               skills:1,
               profession:1,
+              ratings:1,
               socialLinks:1,
               //you can add more fields here if you want
             },
           },
         ],
+
         totalCount:[
           {$match:filter},
           {$count:"count"},
         ],
         allSkill:[
           { $unwind: "$skills" },
-          { $group: { _id: "$skills.category" } },
+          { $group: { _id: "$skills.category"} },
           { $sort: { _id: 1 } }, // Optional: sort alphabetically
           {
             $project: {
@@ -131,11 +135,7 @@ router.get("/", async (req, res) => {
               label: "$_id"
             }
           }
-
-         
-          
-         
-         
+  
         ],
       },
       
@@ -143,16 +143,9 @@ router.get("/", async (req, res) => {
     ]).toArray()
 
     const {paginationResults, totalCount,allSkill} =result[0]
+    console.log(allSkill,"allSkill")
 
-    // const [instructors, totalCount] = await Promise.all([
-    //   instructorCollection
-    //     .find(filter)
-    //     .sort(sort)
-    //     .skip(skip)
-    //     .limit(limitInt)
-    //     .toArray(),
-    //   instructorCollection.countDocuments(filter),
-    // ]);
+
     const total = totalCount[0]?.count || 0;
     res.status(200).json({
       success: true,
@@ -164,9 +157,8 @@ router.get("/", async (req, res) => {
       
       total:totalCount[0]?.count||0,
       pagination: {
-        totalCount: totalCount,
-        page: pageInt,
-        
+        totalCount: total,
+        page: pageInt, 
         limit: limitInt,
         totalPages: Math.ceil(totalCount / limitInt),
       },
