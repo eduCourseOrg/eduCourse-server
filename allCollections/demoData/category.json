@@ -1,9 +1,9 @@
 [
-  "Web Development",
-  "Data Science",
-  "Cybersecurity",
-  "Networking",
-  "Graphic Design",
-  "Artificial Intelligence",
-  "Programming"
+  { "category": "Web Development" },
+  { "category": "Data Science" },
+  { "category": "Cybersecurity" },
+  { "category": "Networking" },
+  { "category": "Graphic Design" },
+  { "category": "Artificial Intelligence" },
+  { "category": "Programming" }
 ]

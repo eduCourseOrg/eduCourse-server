@@ -2,22 +2,27 @@ const buildFilter = (searchTerm, selectedSkills) => {
   const filter = {};
   if (searchTerm) {
     const regex = new RegExp(searchTerm, "i");
-    filter.$or = [{ name: regex }, { email: regex }, { "bio.skills": regex }];
+    filter.$or = [{ name: regex }, { email: regex },{ "profession.designation": regex }, { "skills.category": regex }];
   }
   if (selectedSkills && selectedSkills !== "All Skills") {
     const skillsArray = Array.isArray(selectedSkills)
       ? selectedSkills
       : [selectedSkills];
-    filter["bio.skills"] = { $in: skillsArray };
+    filter['skills.category']= { $in: skillsArray };
+   
   }
   return filter;
+  
 };
 
 const buildSort = (sortBy) => {
-  if (sortBy === "Ascending") return { ratings: 1 };
-  if (sortBy === "Descending") return { ratings: -1 };
-  return {};
+  
+  if (!sortBy) return {}; // Default: no sorting
+  const [field, order] = sortBy.split(':');
+  if (!field || !['asc', 'desc'].includes(order)) return {};
+  return { [field]: order === 'asc' ? 1 : -1 };
 };
+
 
 export { buildFilter, buildSort };
 
@@ -35,6 +40,24 @@ const buildCourseFilter = (
     filter.$or = [{ name: regex }, { description: regex }, { category: regex }];
   }
 
+  const combinedCategories = [];
+  if (selectedCategory && selectedCategory !== "All Categories") {
+    combinedCategories.push(selectedCategory);
+  }
+
+  if (selectedCheckboxes) {
+    combinedCategories.push(...selectedCheckboxes.split(","));
+  }
+
+  if (combinedCategories.length > 0) {
+    filter.category = { $in: combinedCategories };
+  }
+    // Level checkboxes (multi)
+    if (selectedLevelCheckboxes.length > 0) {
+      const levels = selectedLevelCheckboxes.split(",");
+      filter.level = { $in: levels };
+    }
+
   // Dropdown single category
   // if (selectedCategory && selectedCategory !== "All Categories") {
   //   const categoriesArray = Array.isArray(selectedCategory)
@@ -49,26 +72,12 @@ const buildCourseFilter = (
   //   filter.category = { $in: categories };
   // }
   // Combine dropdown + checkbox categories
-  const combinedCategories = [];
-  if (selectedCategory && selectedCategory !== "All Categories") {
-    combinedCategories.push(selectedCategory);
-  }
 
-  if (selectedCheckboxes) {
-    combinedCategories.push(...selectedCheckboxes.split(","));
-  }
 
-  if (combinedCategories.length > 0) {
-    filter.category = { $in: combinedCategories };
-  }
 
-  // Level checkboxes (multi)
-  if (selectedLevelCheckboxes) {
-    const levels = selectedLevelCheckboxes.split(",");
-    filter.courseLevel = { $in: levels };
-  }
 
   return filter;
 };
 
 export { buildCourseFilter };
+
