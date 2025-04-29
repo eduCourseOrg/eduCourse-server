@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "totalPosts": 42,
+    "timestamp": "2025-04-29T12:00:00Z"
+  },
+  "categories": [
+    {
+      "id": "frontend",
+      "name": "Frontend",
+      "postCount": 12
+    },
+    {
+      "id": "backend",
+      "name": "Backend",
+      "postCount": 9
+    },
+    {
+      "id": "devops",
+      "name": "DevOps",
+      "postCount": 6
+    }
+  ],
+  "archives": [
+    {
+      "id": "2025-04",
+      "label": "April 2025",
+      "year": 2025,
+      "month": 4,
+      "postCount": 5
+    },
+    {
+      "id": "2025-03",
+      "label": "March 2025",
+      "year": 2025,
+      "month": 3,
+      "postCount": 7
+    }
+  ],
+  "recentPosts": [
+    {
+      "id": "deploying-docker-nginx",
+      "title": "Deploying with Docker and NGINX",
+      "slug": "deploying-docker-nginx",
+      "publishedAt": "2025-04-27T14:22:00Z",
+      "excerpt": "Learn how to set up Docker and serve your apps with NGINX.",
+      "thumbnailUrl": "https://cdn.example.com/posts/docker.jpg",
+      "category": {
+        "id": "devops",
+        "name": "DevOps"
+      }
+    },
+    {
+      "id": "css-grid-vs-flexbox",
+      "title": "CSS Grid vs Flexbox in 2025",
+      "slug": "css-grid-vs-flexbox",
+      "publishedAt": "2025-04-25T08:10:00Z",
+      "excerpt": "A detailed comparison between CSS Grid and Flexbox in modern web layouts.",
+      "thumbnailUrl": "https://cdn.example.com/posts/grid-vs-flexbox.jpg",
+      "category": {
+        "id": "frontend",
+        "name": "Frontend"
+      }
+    }
+  ],
+  "search": {
+    "query": "docker",
+    "results": [
+      {
+        "id": "deploying-docker-nginx",
+        "title": "Deploying with Docker and NGINX",
+        "slug": "deploying-docker-nginx",
+        "excerpt": "Learn how to set up Docker and serve your apps with NGINX.",
+        "publishedAt": "2025-04-27T14:22:00Z"
+      },
+      {
+        "id": "docker-compose-beginners",
+        "title": "Docker Compose for Beginners",
+        "slug": "docker-compose-beginners",
+        "excerpt": "A quick intro to managing multi-container apps using Docker Compose.",
+        "publishedAt": "2025-03-12T09:45:00Z"
+      }
+    ]
+  }
+}
