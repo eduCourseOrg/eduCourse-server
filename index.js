@@ -12,17 +12,20 @@ import bodyParser from "body-parser";
 const port = process.env.PORT || 5000;
 
 const app = express();
-// const cookieParser = require('cookie-parser');
-app.use(cookieParser());
-app.use(express.json());
 app.use(cors(
-{
-  origin:['http://localhost:5173'],
-  credentials:true
-}
-));
+  {
+    origin:['http://localhost:5173'],
+    credentials:true
+  }
+  ));
+
 app.use(bodyParser.json({ limit: "100mb" }));
 app.use(bodyParser.urlencoded({ extended: true, limit: "100mb" }));
+// const cookieParser = require('cookie-parser');
+app.use(cookieParser());
+app.use(express.json({ limit: "100mb" }));
+
+
 
 app.get("/", (req, res) => {
   res.send("Your eduCourse server is running");
