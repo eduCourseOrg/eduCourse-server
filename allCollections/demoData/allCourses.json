@@ -1,0 +1,1980 @@
+[
+  {
+    "name": "Introduction to JavaScript",
+    "category": "Web Development",
+    "description": "Learn JavaScript from scratch, covering basics to advanced concepts.",
+    "instructorId": "101",
+    "ratings": 4.8,
+    "courseContent": [
+      {
+        "section": "Introduction",
+        "lessons": [
+          {
+            "title": "What is JavaScript?",
+            "duration": "10 min",
+            "videoUrl": "https://example.com/lesson1"
+          },
+          {
+            "title": "Setting up your environment",
+            "duration": "15 min",
+            "videoUrl": "https://example.com/lesson2"
+          }
+        ]
+      }
+    ],
+    "pdf": [
+      {
+        "title": "JavaScript Basics Guide",
+        "fileUrl": "https://example.com/js_basics.pdf"
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "What is Python primarily used for?",
+        "options": [
+          "Web Development",
+          "Data Science",
+          "Cybersecurity",
+          "Networking"
+        ],
+        "answer": "Data Science"
+      },
+      {
+        "question": "Which library is used for data manipulation in Python?",
+        "options": ["NumPy", "Pandas", "TensorFlow", "Matplotlib"],
+        "answer": "Pandas"
+      },
+      {
+        "question": "What keyword is used to define a function in Python?",
+        "options": ["def", "function", "define", "func"],
+        "answer": "def"
+      },
+      {
+        "question": "Which of the following is a Python machine learning library?",
+        "options": ["Scikit-learn", "Django", "Flask", "React"],
+        "answer": "Scikit-learn"
+      },
+      {
+        "question": "What is the output of print(2 ** 3) in Python?",
+        "options": ["5", "6", "8", "10"],
+        "answer": "8"
+      }
+    ],
+
+    "reviews": [
+      {
+        "studentId": "201",
+        "rating": 5,
+        "comment": "Great course! Very informative.",
+        "date": "2025-02-05"
+      }
+    ],
+    "FAQ": [
+      {
+        "question": "Do I need prior coding knowledge?",
+        "answer": "No, this course is beginner-friendly."
+      }
+    ],
+    "comments": [
+      {
+        "studentId": "203",
+        "comment": "Looking forward to this course!",
+        "date": "2025-02-05"
+      }
+    ],
+    "enrolledStudents": [
+      {
+        "studentId": "201",
+        "enrollmentDate": "2025-02-05"
+      }
+    ],
+    "enrolledCount": 1,
+    "createdDateTime": "2025-02-05T10:30:00Z",
+    "banner": "https://i.ibb.co.com/yFLZRw9c/course-banner-7.jpg",
+    "courseLevel": "Beginner"
+  },
+  {
+    "name": "Introduction to JavaScript",
+    "category": "Web Development",
+    "description": "Learn JavaScript from scratch, covering basics to advanced concepts.",
+    "instructorId": "101",
+    "ratings": 4.8,
+    "courseContent": [
+      {
+        "section": "Introduction",
+        "lessons": [
+          {
+            "title": "What is JavaScript?",
+            "duration": "10 min",
+            "videoUrl": "https://example.com/lesson1"
+          },
+          {
+            "title": "Setting up your environment",
+            "duration": "15 min",
+            "videoUrl": "https://example.com/lesson2"
+          }
+        ]
+      }
+    ],
+    "pdf": [
+      {
+        "title": "JavaScript Basics Guide",
+        "fileUrl": "https://example.com/js_basics.pdf"
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "What is Python primarily used for?",
+        "options": [
+          "Web Development",
+          "Data Science",
+          "Cybersecurity",
+          "Networking"
+        ],
+        "answer": "Data Science"
+      },
+      {
+        "question": "Which library is used for data manipulation in Python?",
+        "options": ["NumPy", "Pandas", "TensorFlow", "Matplotlib"],
+        "answer": "Pandas"
+      },
+      {
+        "question": "What keyword is used to define a function in Python?",
+        "options": ["def", "function", "define", "func"],
+        "answer": "def"
+      },
+      {
+        "question": "Which of the following is a Python machine learning library?",
+        "options": ["Scikit-learn", "Django", "Flask", "React"],
+        "answer": "Scikit-learn"
+      },
+      {
+        "question": "What is the output of print(2 ** 3) in Python?",
+        "options": ["5", "6", "8", "10"],
+        "answer": "8"
+      }
+    ],
+
+    "reviews": [
+      {
+        "studentId": "201",
+        "rating": 5,
+        "comment": "Great course! Very informative.",
+        "date": "2025-02-05"
+      }
+    ],
+    "FAQ": [
+      {
+        "question": "Do I need prior coding knowledge?",
+        "answer": "No, this course is beginner-friendly."
+      }
+    ],
+    "comments": [
+      {
+        "studentId": "203",
+        "comment": "Looking forward to this course!",
+        "date": "2025-02-05"
+      }
+    ],
+    "enrolledStudents": [
+      {
+        "studentId": "201",
+        "enrollmentDate": "2025-02-05"
+      }
+    ],
+    "enrolledCount": 1,
+    "createdDateTime": "2025-02-05T10:30:00Z",
+    "banner": "https://i.ibb.co.com/99WdpzNg/course-banner-3.jpg",
+    "courseLevel": "Beginner"
+  },
+  {
+    "name": "Introduction to JavaScript",
+    "category": "Web Development",
+    "description": "Learn JavaScript from scratch, covering basics to advanced concepts.",
+    "instructorId": "101",
+    "ratings": 4.8,
+    "courseContent": [
+      {
+        "section": "Introduction",
+        "lessons": [
+          {
+            "title": "What is JavaScript?",
+            "duration": "10 min",
+            "videoUrl": "https://example.com/lesson1"
+          },
+          {
+            "title": "Setting up your environment",
+            "duration": "15 min",
+            "videoUrl": "https://example.com/lesson2"
+          }
+        ]
+      }
+    ],
+    "pdf": [
+      {
+        "title": "JavaScript Basics Guide",
+        "fileUrl": "https://example.com/js_basics.pdf"
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "What is Python primarily used for?",
+        "options": [
+          "Web Development",
+          "Data Science",
+          "Cybersecurity",
+          "Networking"
+        ],
+        "answer": "Data Science"
+      },
+      {
+        "question": "Which library is used for data manipulation in Python?",
+        "options": ["NumPy", "Pandas", "TensorFlow", "Matplotlib"],
+        "answer": "Pandas"
+      },
+      {
+        "question": "What keyword is used to define a function in Python?",
+        "options": ["def", "function", "define", "func"],
+        "answer": "def"
+      },
+      {
+        "question": "Which of the following is a Python machine learning library?",
+        "options": ["Scikit-learn", "Django", "Flask", "React"],
+        "answer": "Scikit-learn"
+      },
+      {
+        "question": "What is the output of print(2 ** 3) in Python?",
+        "options": ["5", "6", "8", "10"],
+        "answer": "8"
+      }
+    ],
+
+    "reviews": [
+      {
+        "studentId": "201",
+        "rating": 5,
+        "comment": "Great course! Very informative.",
+        "date": "2025-02-05"
+      }
+    ],
+    "FAQ": [
+      {
+        "question": "Do I need prior coding knowledge?",
+        "answer": "No, this course is beginner-friendly."
+      }
+    ],
+    "comments": [
+      {
+        "studentId": "203",
+        "comment": "Looking forward to this course!",
+        "date": "2025-02-05"
+      }
+    ],
+    "enrolledStudents": [
+      {
+        "studentId": "201",
+        "enrollmentDate": "2025-02-05"
+      }
+    ],
+    "enrolledCount": 1,
+    "createdDateTime": "2025-02-05T10:30:00Z",
+    "banner": "https://i.ibb.co.com/sv2r5c3g/course-banner-2.jpg",
+    "courseLevel": "Beginner"
+  },
+  {
+    "name": "Introduction to JavaScript",
+    "category": "Web Development",
+    "description": "Learn JavaScript from scratch, covering basics to advanced concepts.",
+    "instructorId": "101",
+    "ratings": 4.8,
+    "courseContent": [
+      {
+        "section": "Introduction",
+        "lessons": [
+          {
+            "title": "What is JavaScript?",
+            "duration": "10 min",
+            "videoUrl": "https://example.com/lesson1"
+          },
+          {
+            "title": "Setting up your environment",
+            "duration": "15 min",
+            "videoUrl": "https://example.com/lesson2"
+          }
+        ]
+      }
+    ],
+    "pdf": [
+      {
+        "title": "JavaScript Basics Guide",
+        "fileUrl": "https://example.com/js_basics.pdf"
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "What is Python primarily used for?",
+        "options": [
+          "Web Development",
+          "Data Science",
+          "Cybersecurity",
+          "Networking"
+        ],
+        "answer": "Data Science"
+      },
+      {
+        "question": "Which library is used for data manipulation in Python?",
+        "options": ["NumPy", "Pandas", "TensorFlow", "Matplotlib"],
+        "answer": "Pandas"
+      },
+      {
+        "question": "What keyword is used to define a function in Python?",
+        "options": ["def", "function", "define", "func"],
+        "answer": "def"
+      },
+      {
+        "question": "Which of the following is a Python machine learning library?",
+        "options": ["Scikit-learn", "Django", "Flask", "React"],
+        "answer": "Scikit-learn"
+      },
+      {
+        "question": "What is the output of print(2 ** 3) in Python?",
+        "options": ["5", "6", "8", "10"],
+        "answer": "8"
+      }
+    ],
+
+    "reviews": [
+      {
+        "studentId": "201",
+        "rating": 5,
+        "comment": "Great course! Very informative.",
+        "date": "2025-02-05"
+      }
+    ],
+    "FAQ": [
+      {
+        "question": "Do I need prior coding knowledge?",
+        "answer": "No, this course is beginner-friendly."
+      }
+    ],
+    "comments": [
+      {
+        "studentId": "203",
+        "comment": "Looking forward to this course!",
+        "date": "2025-02-05"
+      }
+    ],
+    "enrolledStudents": [
+      {
+        "studentId": "201",
+        "enrollmentDate": "2025-02-05"
+      }
+    ],
+    "enrolledCount": 1,
+    "createdDateTime": "2025-02-05T10:30:00Z",
+    "banner": "https://i.ibb.co.com/twnG2K9n/course-banner-10.jpg",
+    "courseLevel": "Beginner"
+  },
+  {
+    "name": "Python for Data Science",
+    "category": "Data Science",
+    "description": "Learn Python programming with a focus on data analysis and machine learning.",
+    "instructorId": "102",
+    "ratings": 4.7,
+    "courseContent": [
+      {
+        "section": "Getting Started",
+        "lessons": [
+          {
+            "title": "Introduction to Python",
+            "duration": "12 min",
+            "videoUrl": "https://example.com/python1"
+          }
+        ]
+      }
+    ],
+    "pdf": [
+      {
+        "title": "Python Data Science Guide",
+        "fileUrl": "https://example.com/python_ds.pdf"
+      }
+    ],
+    "reviews": [
+      {
+        "studentId": "301",
+        "rating": 5,
+        "comment": "Excellent course for beginners!",
+        "date": "2025-02-10"
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "What is Python primarily used for?",
+        "options": [
+          "Web Development",
+          "Data Science",
+          "Cybersecurity",
+          "Networking"
+        ],
+        "answer": "Data Science"
+      },
+      {
+        "question": "Which library is used for data manipulation in Python?",
+        "options": ["NumPy", "Pandas", "TensorFlow", "Matplotlib"],
+        "answer": "Pandas"
+      },
+      {
+        "question": "What keyword is used to define a function in Python?",
+        "options": ["def", "function", "define", "func"],
+        "answer": "def"
+      },
+      {
+        "question": "Which of the following is a Python machine learning library?",
+        "options": ["Scikit-learn", "Django", "Flask", "React"],
+        "answer": "Scikit-learn"
+      },
+      {
+        "question": "What is the output of print(2 ** 3) in Python?",
+        "options": ["5", "6", "8", "10"],
+        "answer": "8"
+      }
+    ],
+
+    "FAQ": [
+      {
+        "question": "Do I need programming experience?",
+        "answer": "No, this course starts from scratch."
+      }
+    ],
+    "comments": [
+      {
+        "studentId": "302",
+        "comment": "Looking forward to the lessons!",
+        "date": "2025-02-11"
+      }
+    ],
+    "enrolledStudents": [
+      {
+        "studentId": "301",
+        "enrollmentDate": "2025-02-10"
+      }
+    ],
+    "enrolledCount": 1,
+    "createdDateTime": "2025-02-10T09:30:00Z",
+    "banner": "https://i.ibb.co.com/yFLZRw9c/course-banner-7.jpg",
+    "courseLevel": "Beginner"
+  },
+  {
+    "name": "Python for Data Science",
+    "category": "Data Science",
+    "description": "Learn Python programming with a focus on data analysis and machine learning.",
+    "instructorId": "102",
+    "ratings": 4.7,
+    "courseContent": [
+      {
+        "section": "Getting Started",
+        "lessons": [
+          {
+            "title": "Introduction to Python",
+            "duration": "12 min",
+            "videoUrl": "https://example.com/python1"
+          }
+        ]
+      }
+    ],
+    "pdf": [
+      {
+        "title": "Python Data Science Guide",
+        "fileUrl": "https://example.com/python_ds.pdf"
+      }
+    ],
+    "reviews": [
+      {
+        "studentId": "301",
+        "rating": 5,
+        "comment": "Excellent course for beginners!",
+        "date": "2025-02-10"
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "What is Python primarily used for?",
+        "options": [
+          "Web Development",
+          "Data Science",
+          "Cybersecurity",
+          "Networking"
+        ],
+        "answer": "Data Science"
+      },
+      {
+        "question": "Which library is used for data manipulation in Python?",
+        "options": ["NumPy", "Pandas", "TensorFlow", "Matplotlib"],
+        "answer": "Pandas"
+      },
+      {
+        "question": "What keyword is used to define a function in Python?",
+        "options": ["def", "function", "define", "func"],
+        "answer": "def"
+      },
+      {
+        "question": "Which of the following is a Python machine learning library?",
+        "options": ["Scikit-learn", "Django", "Flask", "React"],
+        "answer": "Scikit-learn"
+      },
+      {
+        "question": "What is the output of print(2 ** 3) in Python?",
+        "options": ["5", "6", "8", "10"],
+        "answer": "8"
+      }
+    ],
+
+    "FAQ": [
+      {
+        "question": "Do I need programming experience?",
+        "answer": "No, this course starts from scratch."
+      }
+    ],
+    "comments": [
+      {
+        "studentId": "302",
+        "comment": "Looking forward to the lessons!",
+        "date": "2025-02-11"
+      }
+    ],
+    "enrolledStudents": [
+      {
+        "studentId": "301",
+        "enrollmentDate": "2025-02-10"
+      }
+    ],
+    "enrolledCount": 1,
+    "createdDateTime": "2025-02-10T09:30:00Z",
+    "banner": "https://i.ibb.co.com/yFLZRw9c/course-banner-7.jpg",
+    "courseLevel": "Beginner"
+  },
+  {
+    "name": "Python for Data Science",
+    "category": "Data Science",
+    "description": "Learn Python programming with a focus on data analysis and machine learning.",
+    "instructorId": "102",
+    "ratings": 4.7,
+    "courseContent": [
+      {
+        "section": "Getting Started",
+        "lessons": [
+          {
+            "title": "Introduction to Python",
+            "duration": "12 min",
+            "videoUrl": "https://example.com/python1"
+          }
+        ]
+      }
+    ],
+    "pdf": [
+      {
+        "title": "Python Data Science Guide",
+        "fileUrl": "https://example.com/python_ds.pdf"
+      }
+    ],
+    "reviews": [
+      {
+        "studentId": "301",
+        "rating": 5,
+        "comment": "Excellent course for beginners!",
+        "date": "2025-02-10"
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "What is Python primarily used for?",
+        "options": [
+          "Web Development",
+          "Data Science",
+          "Cybersecurity",
+          "Networking"
+        ],
+        "answer": "Data Science"
+      },
+      {
+        "question": "Which library is used for data manipulation in Python?",
+        "options": ["NumPy", "Pandas", "TensorFlow", "Matplotlib"],
+        "answer": "Pandas"
+      },
+      {
+        "question": "What keyword is used to define a function in Python?",
+        "options": ["def", "function", "define", "func"],
+        "answer": "def"
+      },
+      {
+        "question": "Which of the following is a Python machine learning library?",
+        "options": ["Scikit-learn", "Django", "Flask", "React"],
+        "answer": "Scikit-learn"
+      },
+      {
+        "question": "What is the output of print(2 ** 3) in Python?",
+        "options": ["5", "6", "8", "10"],
+        "answer": "8"
+      }
+    ],
+
+    "FAQ": [
+      {
+        "question": "Do I need programming experience?",
+        "answer": "No, this course starts from scratch."
+      }
+    ],
+    "comments": [
+      {
+        "studentId": "302",
+        "comment": "Looking forward to the lessons!",
+        "date": "2025-02-11"
+      }
+    ],
+    "enrolledStudents": [
+      {
+        "studentId": "301",
+        "enrollmentDate": "2025-02-10"
+      }
+    ],
+    "enrolledCount": 1,
+    "createdDateTime": "2025-02-10T09:30:00Z",
+    "banner": "https://example.com/python_banner.jpg",
+    "courseLevel": "Beginner"
+  },
+  {
+    "name": "Python for Data Science",
+    "category": "Data Science",
+    "description": "Learn Python programming with a focus on data analysis and machine learning.",
+    "instructorId": "102",
+    "ratings": 4.7,
+    "courseContent": [
+      {
+        "section": "Getting Started",
+        "lessons": [
+          {
+            "title": "Introduction to Python",
+            "duration": "12 min",
+            "videoUrl": "https://example.com/python1"
+          }
+        ]
+      }
+    ],
+    "pdf": [
+      {
+        "title": "Python Data Science Guide",
+        "fileUrl": "https://example.com/python_ds.pdf"
+      }
+    ],
+    "reviews": [
+      {
+        "studentId": "301",
+        "rating": 5,
+        "comment": "Excellent course for beginners!",
+        "date": "2025-02-10"
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "What is Python primarily used for?",
+        "options": [
+          "Web Development",
+          "Data Science",
+          "Cybersecurity",
+          "Networking"
+        ],
+        "answer": "Data Science"
+      },
+      {
+        "question": "Which library is used for data manipulation in Python?",
+        "options": ["NumPy", "Pandas", "TensorFlow", "Matplotlib"],
+        "answer": "Pandas"
+      },
+      {
+        "question": "What keyword is used to define a function in Python?",
+        "options": ["def", "function", "define", "func"],
+        "answer": "def"
+      },
+      {
+        "question": "Which of the following is a Python machine learning library?",
+        "options": ["Scikit-learn", "Django", "Flask", "React"],
+        "answer": "Scikit-learn"
+      },
+      {
+        "question": "What is the output of print(2 ** 3) in Python?",
+        "options": ["5", "6", "8", "10"],
+        "answer": "8"
+      }
+    ],
+
+    "FAQ": [
+      {
+        "question": "Do I need programming experience?",
+        "answer": "No, this course starts from scratch."
+      }
+    ],
+    "comments": [
+      {
+        "studentId": "302",
+        "comment": "Looking forward to the lessons!",
+        "date": "2025-02-11"
+      }
+    ],
+    "enrolledStudents": [
+      {
+        "studentId": "301",
+        "enrollmentDate": "2025-02-10"
+      }
+    ],
+    "enrolledCount": 1,
+    "createdDateTime": "2025-02-10T09:30:00Z",
+    "banner": "https://example.com/python_banner.jpg",
+    "courseLevel": "Beginner"
+  },
+  {
+    "name": "Python for Data Science",
+    "category": "Data Science",
+    "description": "Learn Python programming with a focus on data analysis and machine learning.",
+    "instructorId": "102",
+    "ratings": 4.7,
+    "courseContent": [
+      {
+        "section": "Getting Started",
+        "lessons": [
+          {
+            "title": "Introduction to Python",
+            "duration": "12 min",
+            "videoUrl": "https://example.com/python1"
+          }
+        ]
+      }
+    ],
+    "pdf": [
+      {
+        "title": "Python Data Science Guide",
+        "fileUrl": "https://example.com/python_ds.pdf"
+      }
+    ],
+    "reviews": [
+      {
+        "studentId": "301",
+        "rating": 5,
+        "comment": "Excellent course for beginners!",
+        "date": "2025-02-10"
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "What is Python primarily used for?",
+        "options": [
+          "Web Development",
+          "Data Science",
+          "Cybersecurity",
+          "Networking"
+        ],
+        "answer": "Data Science"
+      },
+      {
+        "question": "Which library is used for data manipulation in Python?",
+        "options": ["NumPy", "Pandas", "TensorFlow", "Matplotlib"],
+        "answer": "Pandas"
+      },
+      {
+        "question": "What keyword is used to define a function in Python?",
+        "options": ["def", "function", "define", "func"],
+        "answer": "def"
+      },
+      {
+        "question": "Which of the following is a Python machine learning library?",
+        "options": ["Scikit-learn", "Django", "Flask", "React"],
+        "answer": "Scikit-learn"
+      },
+      {
+        "question": "What is the output of print(2 ** 3) in Python?",
+        "options": ["5", "6", "8", "10"],
+        "answer": "8"
+      }
+    ],
+
+    "FAQ": [
+      {
+        "question": "Do I need programming experience?",
+        "answer": "No, this course starts from scratch."
+      }
+    ],
+    "comments": [
+      {
+        "studentId": "302",
+        "comment": "Looking forward to the lessons!",
+        "date": "2025-02-11"
+      }
+    ],
+    "enrolledStudents": [
+      {
+        "studentId": "301",
+        "enrollmentDate": "2025-02-10"
+      }
+    ],
+    "enrolledCount": 1,
+    "createdDateTime": "2025-02-10T09:30:00Z",
+    "banner": "https://example.com/python_banner.jpg",
+    "courseLevel": "Beginner"
+  },
+  {
+    "name": "Cybersecurity Fundamentals",
+    "category": "Cyber Security",
+    "description": "Learn the basics of cybersecurity and ethical hacking.",
+    "instructorId": "103",
+    "ratings": 4.9,
+    "courseContent": [
+      {
+        "section": "Introduction to Cybersecurity",
+        "lessons": [
+          {
+            "title": "What is Cybersecurity?",
+            "duration": "20 min",
+            "videoUrl": "https://example.com/cyber1"
+          }
+        ]
+      }
+    ],
+    "pdf": [
+      {
+        "title": "Cybersecurity Guide",
+        "fileUrl": "https://example.com/cybersecurity.pdf"
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "What is Python primarily used for?",
+        "options": [
+          "Web Development",
+          "Data Science",
+          "Cybersecurity",
+          "Networking"
+        ],
+        "answer": "Data Science"
+      },
+      {
+        "question": "Which library is used for data manipulation in Python?",
+        "options": ["NumPy", "Pandas", "TensorFlow", "Matplotlib"],
+        "answer": "Pandas"
+      },
+      {
+        "question": "What keyword is used to define a function in Python?",
+        "options": ["def", "function", "define", "func"],
+        "answer": "def"
+      },
+      {
+        "question": "Which of the following is a Python machine learning library?",
+        "options": ["Scikit-learn", "Django", "Flask", "React"],
+        "answer": "Scikit-learn"
+      },
+      {
+        "question": "What is the output of print(2 ** 3) in Python?",
+        "options": ["5", "6", "8", "10"],
+        "answer": "8"
+      }
+    ],
+
+    "reviews": [
+      {
+        "studentId": "401",
+        "rating": 5,
+        "comment": "Very insightful!",
+        "date": "2025-02-12"
+      }
+    ],
+    "FAQ": [
+      {
+        "question": "Is this course technical?",
+        "answer": "Yes, but it's beginner-friendly."
+      }
+    ],
+    "comments": [
+      {
+        "studentId": "402",
+        "comment": "Excited to learn ethical hacking!",
+        "date": "2025-02-13"
+      }
+    ],
+    "enrolledStudents": [
+      {
+        "studentId": "401",
+        "enrollmentDate": "2025-02-12"
+      }
+    ],
+    "enrolledCount": 1,
+    "createdDateTime": "2025-02-12T09:00:00Z",
+    "banner": "https://example.com/cybersecurity_banner.jpg",
+    "courseLevel": "Intermediate"
+  },
+  {
+    "name": "Cybersecurity Fundamentals",
+    "category": "Cyber Security",
+    "description": "Learn the basics of cybersecurity and ethical hacking.",
+    "instructorId": "103",
+    "ratings": 4.9,
+    "courseContent": [
+      {
+        "section": "Introduction to Cybersecurity",
+        "lessons": [
+          {
+            "title": "What is Cybersecurity?",
+            "duration": "20 min",
+            "videoUrl": "https://example.com/cyber1"
+          }
+        ]
+      }
+    ],
+    "pdf": [
+      {
+        "title": "Cybersecurity Guide",
+        "fileUrl": "https://example.com/cybersecurity.pdf"
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "What is Python primarily used for?",
+        "options": [
+          "Web Development",
+          "Data Science",
+          "Cybersecurity",
+          "Networking"
+        ],
+        "answer": "Data Science"
+      },
+      {
+        "question": "Which library is used for data manipulation in Python?",
+        "options": ["NumPy", "Pandas", "TensorFlow", "Matplotlib"],
+        "answer": "Pandas"
+      },
+      {
+        "question": "What keyword is used to define a function in Python?",
+        "options": ["def", "function", "define", "func"],
+        "answer": "def"
+      },
+      {
+        "question": "Which of the following is a Python machine learning library?",
+        "options": ["Scikit-learn", "Django", "Flask", "React"],
+        "answer": "Scikit-learn"
+      },
+      {
+        "question": "What is the output of print(2 ** 3) in Python?",
+        "options": ["5", "6", "8", "10"],
+        "answer": "8"
+      }
+    ],
+
+    "reviews": [
+      {
+        "studentId": "401",
+        "rating": 5,
+        "comment": "Very insightful!",
+        "date": "2025-02-12"
+      }
+    ],
+    "FAQ": [
+      {
+        "question": "Is this course technical?",
+        "answer": "Yes, but it's beginner-friendly."
+      }
+    ],
+    "comments": [
+      {
+        "studentId": "402",
+        "comment": "Excited to learn ethical hacking!",
+        "date": "2025-02-13"
+      }
+    ],
+    "enrolledStudents": [
+      {
+        "studentId": "401",
+        "enrollmentDate": "2025-02-12"
+      }
+    ],
+    "enrolledCount": 1,
+    "createdDateTime": "2025-02-12T09:00:00Z",
+    "banner": "https://example.com/cybersecurity_banner.jpg",
+    "courseLevel": "Intermediate"
+  },
+  {
+    "name": "Cybersecurity Fundamentals",
+    "category": "Cyber Security",
+    "description": "Learn the basics of cybersecurity and ethical hacking.",
+    "instructorId": "103",
+    "ratings": 4.9,
+    "courseContent": [
+      {
+        "section": "Introduction to Cybersecurity",
+        "lessons": [
+          {
+            "title": "What is Cybersecurity?",
+            "duration": "20 min",
+            "videoUrl": "https://example.com/cyber1"
+          }
+        ]
+      }
+    ],
+    "pdf": [
+      {
+        "title": "Cybersecurity Guide",
+        "fileUrl": "https://example.com/cybersecurity.pdf"
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "What is Python primarily used for?",
+        "options": [
+          "Web Development",
+          "Data Science",
+          "Cybersecurity",
+          "Networking"
+        ],
+        "answer": "Data Science"
+      },
+      {
+        "question": "Which library is used for data manipulation in Python?",
+        "options": ["NumPy", "Pandas", "TensorFlow", "Matplotlib"],
+        "answer": "Pandas"
+      },
+      {
+        "question": "What keyword is used to define a function in Python?",
+        "options": ["def", "function", "define", "func"],
+        "answer": "def"
+      },
+      {
+        "question": "Which of the following is a Python machine learning library?",
+        "options": ["Scikit-learn", "Django", "Flask", "React"],
+        "answer": "Scikit-learn"
+      },
+      {
+        "question": "What is the output of print(2 ** 3) in Python?",
+        "options": ["5", "6", "8", "10"],
+        "answer": "8"
+      }
+    ],
+
+    "reviews": [
+      {
+        "studentId": "401",
+        "rating": 5,
+        "comment": "Very insightful!",
+        "date": "2025-02-12"
+      }
+    ],
+    "FAQ": [
+      {
+        "question": "Is this course technical?",
+        "answer": "Yes, but it's beginner-friendly."
+      }
+    ],
+    "comments": [
+      {
+        "studentId": "402",
+        "comment": "Excited to learn ethical hacking!",
+        "date": "2025-02-13"
+      }
+    ],
+    "enrolledStudents": [
+      {
+        "studentId": "401",
+        "enrollmentDate": "2025-02-12"
+      }
+    ],
+    "enrolledCount": 1,
+    "createdDateTime": "2025-02-12T09:00:00Z",
+    "banner": "https://example.com/cybersecurity_banner.jpg",
+    "courseLevel": "Intermediate"
+  },
+  {
+    "name": "Cybersecurity Fundamentals",
+    "category": "Cyber Security",
+    "description": "Learn the basics of cybersecurity and ethical hacking.",
+    "instructorId": "103",
+    "ratings": 4.9,
+    "courseContent": [
+      {
+        "section": "Introduction to Cybersecurity",
+        "lessons": [
+          {
+            "title": "What is Cybersecurity?",
+            "duration": "20 min",
+            "videoUrl": "https://example.com/cyber1"
+          }
+        ]
+      }
+    ],
+    "pdf": [
+      {
+        "title": "Cybersecurity Guide",
+        "fileUrl": "https://example.com/cybersecurity.pdf"
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "What is Python primarily used for?",
+        "options": [
+          "Web Development",
+          "Data Science",
+          "Cybersecurity",
+          "Networking"
+        ],
+        "answer": "Data Science"
+      },
+      {
+        "question": "Which library is used for data manipulation in Python?",
+        "options": ["NumPy", "Pandas", "TensorFlow", "Matplotlib"],
+        "answer": "Pandas"
+      },
+      {
+        "question": "What keyword is used to define a function in Python?",
+        "options": ["def", "function", "define", "func"],
+        "answer": "def"
+      },
+      {
+        "question": "Which of the following is a Python machine learning library?",
+        "options": ["Scikit-learn", "Django", "Flask", "React"],
+        "answer": "Scikit-learn"
+      },
+      {
+        "question": "What is the output of print(2 ** 3) in Python?",
+        "options": ["5", "6", "8", "10"],
+        "answer": "8"
+      }
+    ],
+
+    "reviews": [
+      {
+        "studentId": "401",
+        "rating": 5,
+        "comment": "Very insightful!",
+        "date": "2025-02-12"
+      }
+    ],
+    "FAQ": [
+      {
+        "question": "Is this course technical?",
+        "answer": "Yes, but it's beginner-friendly."
+      }
+    ],
+    "comments": [
+      {
+        "studentId": "402",
+        "comment": "Excited to learn ethical hacking!",
+        "date": "2025-02-13"
+      }
+    ],
+    "enrolledStudents": [
+      {
+        "studentId": "401",
+        "enrollmentDate": "2025-02-12"
+      }
+    ],
+    "enrolledCount": 1,
+    "createdDateTime": "2025-02-12T09:00:00Z",
+    "banner": "https://example.com/cybersecurity_banner.jpg",
+    "courseLevel": "Intermediate"
+  },
+  {
+    "name": "Cybersecurity Fundamentals",
+    "category": "Cyber Security",
+    "description": "Learn the basics of cybersecurity and ethical hacking.",
+    "instructorId": "103",
+    "ratings": 4.9,
+    "courseContent": [
+      {
+        "section": "Introduction to Cybersecurity",
+        "lessons": [
+          {
+            "title": "What is Cybersecurity?",
+            "duration": "20 min",
+            "videoUrl": "https://example.com/cyber1"
+          }
+        ]
+      }
+    ],
+    "pdf": [
+      {
+        "title": "Cybersecurity Guide",
+        "fileUrl": "https://example.com/cybersecurity.pdf"
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "What is Python primarily used for?",
+        "options": [
+          "Web Development",
+          "Data Science",
+          "Cybersecurity",
+          "Networking"
+        ],
+        "answer": "Data Science"
+      },
+      {
+        "question": "Which library is used for data manipulation in Python?",
+        "options": ["NumPy", "Pandas", "TensorFlow", "Matplotlib"],
+        "answer": "Pandas"
+      },
+      {
+        "question": "What keyword is used to define a function in Python?",
+        "options": ["def", "function", "define", "func"],
+        "answer": "def"
+      },
+      {
+        "question": "Which of the following is a Python machine learning library?",
+        "options": ["Scikit-learn", "Django", "Flask", "React"],
+        "answer": "Scikit-learn"
+      },
+      {
+        "question": "What is the output of print(2 ** 3) in Python?",
+        "options": ["5", "6", "8", "10"],
+        "answer": "8"
+      }
+    ],
+
+    "reviews": [
+      {
+        "studentId": "401",
+        "rating": 5,
+        "comment": "Very insightful!",
+        "date": "2025-02-12"
+      }
+    ],
+    "FAQ": [
+      {
+        "question": "Is this course technical?",
+        "answer": "Yes, but it's beginner-friendly."
+      }
+    ],
+    "comments": [
+      {
+        "studentId": "402",
+        "comment": "Excited to learn ethical hacking!",
+        "date": "2025-02-13"
+      }
+    ],
+    "enrolledStudents": [
+      {
+        "studentId": "401",
+        "enrollmentDate": "2025-02-12"
+      }
+    ],
+    "enrolledCount": 1,
+    "createdDateTime": "2025-02-12T09:00:00Z",
+    "banner": "https://example.com/cybersecurity_banner.jpg",
+    "courseLevel": "Intermediate"
+  },
+  {
+    "name": "Cybersecurity Fundamentals",
+    "category": "Cyber Security",
+    "description": "Learn the basics of cybersecurity and ethical hacking.",
+    "instructorId": "103",
+    "ratings": 4.9,
+    "courseContent": [
+      {
+        "section": "Introduction to Cybersecurity",
+        "lessons": [
+          {
+            "title": "What is Cybersecurity?",
+            "duration": "20 min",
+            "videoUrl": "https://example.com/cyber1"
+          }
+        ]
+      }
+    ],
+    "pdf": [
+      {
+        "title": "Cybersecurity Guide",
+        "fileUrl": "https://example.com/cybersecurity.pdf"
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "What is Python primarily used for?",
+        "options": [
+          "Web Development",
+          "Data Science",
+          "Cybersecurity",
+          "Networking"
+        ],
+        "answer": "Data Science"
+      },
+      {
+        "question": "Which library is used for data manipulation in Python?",
+        "options": ["NumPy", "Pandas", "TensorFlow", "Matplotlib"],
+        "answer": "Pandas"
+      },
+      {
+        "question": "What keyword is used to define a function in Python?",
+        "options": ["def", "function", "define", "func"],
+        "answer": "def"
+      },
+      {
+        "question": "Which of the following is a Python machine learning library?",
+        "options": ["Scikit-learn", "Django", "Flask", "React"],
+        "answer": "Scikit-learn"
+      },
+      {
+        "question": "What is the output of print(2 ** 3) in Python?",
+        "options": ["5", "6", "8", "10"],
+        "answer": "8"
+      }
+    ],
+
+    "reviews": [
+      {
+        "studentId": "401",
+        "rating": 5,
+        "comment": "Very insightful!",
+        "date": "2025-02-12"
+      }
+    ],
+    "FAQ": [
+      {
+        "question": "Is this course technical?",
+        "answer": "Yes, but it's beginner-friendly."
+      }
+    ],
+    "comments": [
+      {
+        "studentId": "402",
+        "comment": "Excited to learn ethical hacking!",
+        "date": "2025-02-13"
+      }
+    ],
+    "enrolledStudents": [
+      {
+        "studentId": "401",
+        "enrollmentDate": "2025-02-12"
+      }
+    ],
+    "enrolledCount": 1,
+    "createdDateTime": "2025-02-12T09:00:00Z",
+    "banner": "https://example.com/cybersecurity_banner.jpg",
+    "courseLevel": "Intermediate"
+  },
+  {
+    "name": "Graphic Design for Beginners",
+    "category": "Graphic Design",
+    "description": "Master the fundamentals of graphic design with industry-standard tools.",
+    "instructorId": "104",
+    "ratings": 4.6,
+    "courseContent": [
+      {
+        "section": "Introduction to Graphic Design",
+        "lessons": [
+          {
+            "title": "Understanding Design Principles",
+            "duration": "18 min",
+            "videoUrl": "https://example.com/design1"
+          }
+        ]
+      }
+    ],
+    "pdf": [
+      {
+        "title": "Graphic Design Basics",
+        "fileUrl": "https://example.com/design_guide.pdf"
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "What is Python primarily used for?",
+        "options": [
+          "Web Development",
+          "Data Science",
+          "Cybersecurity",
+          "Networking"
+        ],
+        "answer": "Data Science"
+      },
+      {
+        "question": "Which library is used for data manipulation in Python?",
+        "options": ["NumPy", "Pandas", "TensorFlow", "Matplotlib"],
+        "answer": "Pandas"
+      },
+      {
+        "question": "What keyword is used to define a function in Python?",
+        "options": ["def", "function", "define", "func"],
+        "answer": "def"
+      },
+      {
+        "question": "Which of the following is a Python machine learning library?",
+        "options": ["Scikit-learn", "Django", "Flask", "React"],
+        "answer": "Scikit-learn"
+      },
+      {
+        "question": "What is the output of print(2 ** 3) in Python?",
+        "options": ["5", "6", "8", "10"],
+        "answer": "8"
+      }
+    ],
+
+    "reviews": [
+      {
+        "studentId": "501",
+        "rating": 4.5,
+        "comment": "Helpful and informative.",
+        "date": "2025-02-14"
+      }
+    ],
+    "FAQ": [
+      {
+        "question": "Do I need Photoshop?",
+        "answer": "No, we cover free alternatives too."
+      }
+    ],
+    "comments": [
+      {
+        "studentId": "502",
+        "comment": "Excited to design cool stuff!",
+        "date": "2025-02-15"
+      }
+    ],
+    "enrolledStudents": [
+      {
+        "studentId": "501",
+        "enrollmentDate": "2025-02-14"
+      }
+    ],
+    "enrolledCount": 1,
+    "createdDateTime": "2025-02-14T11:00:00Z",
+    "banner": "https://example.com/design_banner.jpg",
+    "courseLevel": "Beginner"
+  },
+  {
+    "name": "Graphic Design for Beginners",
+    "category": "Graphic Design",
+    "description": "Master the fundamentals of graphic design with industry-standard tools.",
+    "instructorId": "104",
+    "ratings": 4.6,
+    "courseContent": [
+      {
+        "section": "Introduction to Graphic Design",
+        "lessons": [
+          {
+            "title": "Understanding Design Principles",
+            "duration": "18 min",
+            "videoUrl": "https://example.com/design1"
+          }
+        ]
+      }
+    ],
+    "pdf": [
+      {
+        "title": "Graphic Design Basics",
+        "fileUrl": "https://example.com/design_guide.pdf"
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "What is Python primarily used for?",
+        "options": [
+          "Web Development",
+          "Data Science",
+          "Cybersecurity",
+          "Networking"
+        ],
+        "answer": "Data Science"
+      },
+      {
+        "question": "Which library is used for data manipulation in Python?",
+        "options": ["NumPy", "Pandas", "TensorFlow", "Matplotlib"],
+        "answer": "Pandas"
+      },
+      {
+        "question": "What keyword is used to define a function in Python?",
+        "options": ["def", "function", "define", "func"],
+        "answer": "def"
+      },
+      {
+        "question": "Which of the following is a Python machine learning library?",
+        "options": ["Scikit-learn", "Django", "Flask", "React"],
+        "answer": "Scikit-learn"
+      },
+      {
+        "question": "What is the output of print(2 ** 3) in Python?",
+        "options": ["5", "6", "8", "10"],
+        "answer": "8"
+      }
+    ],
+
+    "reviews": [
+      {
+        "studentId": "501",
+        "rating": 4.5,
+        "comment": "Helpful and informative.",
+        "date": "2025-02-14"
+      }
+    ],
+    "FAQ": [
+      {
+        "question": "Do I need Photoshop?",
+        "answer": "No, we cover free alternatives too."
+      }
+    ],
+    "comments": [
+      {
+        "studentId": "502",
+        "comment": "Excited to design cool stuff!",
+        "date": "2025-02-15"
+      }
+    ],
+    "enrolledStudents": [
+      {
+        "studentId": "501",
+        "enrollmentDate": "2025-02-14"
+      }
+    ],
+    "enrolledCount": 1,
+    "createdDateTime": "2025-02-14T11:00:00Z",
+    "banner": "https://example.com/design_banner.jpg",
+    "courseLevel": "Beginner"
+  },
+  {
+    "name": "Graphic Design for Beginners",
+    "category": "Graphic Design",
+    "description": "Master the fundamentals of graphic design with industry-standard tools.",
+    "instructorId": "104",
+    "ratings": 4.6,
+    "courseContent": [
+      {
+        "section": "Introduction to Graphic Design",
+        "lessons": [
+          {
+            "title": "Understanding Design Principles",
+            "duration": "18 min",
+            "videoUrl": "https://example.com/design1"
+          }
+        ]
+      }
+    ],
+    "pdf": [
+      {
+        "title": "Graphic Design Basics",
+        "fileUrl": "https://example.com/design_guide.pdf"
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "What is Python primarily used for?",
+        "options": [
+          "Web Development",
+          "Data Science",
+          "Cybersecurity",
+          "Networking"
+        ],
+        "answer": "Data Science"
+      },
+      {
+        "question": "Which library is used for data manipulation in Python?",
+        "options": ["NumPy", "Pandas", "TensorFlow", "Matplotlib"],
+        "answer": "Pandas"
+      },
+      {
+        "question": "What keyword is used to define a function in Python?",
+        "options": ["def", "function", "define", "func"],
+        "answer": "def"
+      },
+      {
+        "question": "Which of the following is a Python machine learning library?",
+        "options": ["Scikit-learn", "Django", "Flask", "React"],
+        "answer": "Scikit-learn"
+      },
+      {
+        "question": "What is the output of print(2 ** 3) in Python?",
+        "options": ["5", "6", "8", "10"],
+        "answer": "8"
+      }
+    ],
+
+    "reviews": [
+      {
+        "studentId": "501",
+        "rating": 4.5,
+        "comment": "Helpful and informative.",
+        "date": "2025-02-14"
+      }
+    ],
+    "FAQ": [
+      {
+        "question": "Do I need Photoshop?",
+        "answer": "No, we cover free alternatives too."
+      }
+    ],
+    "comments": [
+      {
+        "studentId": "502",
+        "comment": "Excited to design cool stuff!",
+        "date": "2025-02-15"
+      }
+    ],
+    "enrolledStudents": [
+      {
+        "studentId": "501",
+        "enrollmentDate": "2025-02-14"
+      }
+    ],
+    "enrolledCount": 1,
+    "createdDateTime": "2025-02-14T11:00:00Z",
+    "banner": "https://example.com/design_banner.jpg",
+    "courseLevel": "Beginner"
+  },
+  {
+    "name": "Graphic Design for Beginners",
+    "category": "Graphic Design",
+    "description": "Master the fundamentals of graphic design with industry-standard tools.",
+    "instructorId": "104",
+    "ratings": 4.6,
+    "courseContent": [
+      {
+        "section": "Introduction to Graphic Design",
+        "lessons": [
+          {
+            "title": "Understanding Design Principles",
+            "duration": "18 min",
+            "videoUrl": "https://example.com/design1"
+          }
+        ]
+      }
+    ],
+    "pdf": [
+      {
+        "title": "Graphic Design Basics",
+        "fileUrl": "https://example.com/design_guide.pdf"
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "What is Python primarily used for?",
+        "options": [
+          "Web Development",
+          "Data Science",
+          "Cybersecurity",
+          "Networking"
+        ],
+        "answer": "Data Science"
+      },
+      {
+        "question": "Which library is used for data manipulation in Python?",
+        "options": ["NumPy", "Pandas", "TensorFlow", "Matplotlib"],
+        "answer": "Pandas"
+      },
+      {
+        "question": "What keyword is used to define a function in Python?",
+        "options": ["def", "function", "define", "func"],
+        "answer": "def"
+      },
+      {
+        "question": "Which of the following is a Python machine learning library?",
+        "options": ["Scikit-learn", "Django", "Flask", "React"],
+        "answer": "Scikit-learn"
+      },
+      {
+        "question": "What is the output of print(2 ** 3) in Python?",
+        "options": ["5", "6", "8", "10"],
+        "answer": "8"
+      }
+    ],
+
+    "reviews": [
+      {
+        "studentId": "501",
+        "rating": 4.5,
+        "comment": "Helpful and informative.",
+        "date": "2025-02-14"
+      }
+    ],
+    "FAQ": [
+      {
+        "question": "Do I need Photoshop?",
+        "answer": "No, we cover free alternatives too."
+      }
+    ],
+    "comments": [
+      {
+        "studentId": "502",
+        "comment": "Excited to design cool stuff!",
+        "date": "2025-02-15"
+      }
+    ],
+    "enrolledStudents": [
+      {
+        "studentId": "501",
+        "enrollmentDate": "2025-02-14"
+      }
+    ],
+    "enrolledCount": 1,
+    "createdDateTime": "2025-02-14T11:00:00Z",
+    "banner": "https://example.com/design_banner.jpg",
+    "courseLevel": "Beginner"
+  },
+  {
+    "name": "Graphic Design for Beginners",
+    "category": "Graphic Design",
+    "description": "Master the fundamentals of graphic design with industry-standard tools.",
+    "instructorId": "104",
+    "ratings": 4.6,
+    "courseContent": [
+      {
+        "section": "Introduction to Graphic Design",
+        "lessons": [
+          {
+            "title": "Understanding Design Principles",
+            "duration": "18 min",
+            "videoUrl": "https://example.com/design1"
+          }
+        ]
+      }
+    ],
+    "pdf": [
+      {
+        "title": "Graphic Design Basics",
+        "fileUrl": "https://example.com/design_guide.pdf"
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "What is Python primarily used for?",
+        "options": [
+          "Web Development",
+          "Data Science",
+          "Cybersecurity",
+          "Networking"
+        ],
+        "answer": "Data Science"
+      },
+      {
+        "question": "Which library is used for data manipulation in Python?",
+        "options": ["NumPy", "Pandas", "TensorFlow", "Matplotlib"],
+        "answer": "Pandas"
+      },
+      {
+        "question": "What keyword is used to define a function in Python?",
+        "options": ["def", "function", "define", "func"],
+        "answer": "def"
+      },
+      {
+        "question": "Which of the following is a Python machine learning library?",
+        "options": ["Scikit-learn", "Django", "Flask", "React"],
+        "answer": "Scikit-learn"
+      },
+      {
+        "question": "What is the output of print(2 ** 3) in Python?",
+        "options": ["5", "6", "8", "10"],
+        "answer": "8"
+      }
+    ],
+
+    "reviews": [
+      {
+        "studentId": "501",
+        "rating": 4.5,
+        "comment": "Helpful and informative.",
+        "date": "2025-02-14"
+      }
+    ],
+    "FAQ": [
+      {
+        "question": "Do I need Photoshop?",
+        "answer": "No, we cover free alternatives too."
+      }
+    ],
+    "comments": [
+      {
+        "studentId": "502",
+        "comment": "Excited to design cool stuff!",
+        "date": "2025-02-15"
+      }
+    ],
+    "enrolledStudents": [
+      {
+        "studentId": "501",
+        "enrollmentDate": "2025-02-14"
+      }
+    ],
+    "enrolledCount": 1,
+    "createdDateTime": "2025-02-14T11:00:00Z",
+    "banner": "https://example.com/design_banner.jpg",
+    "courseLevel": "Beginner"
+  },
+  {
+    "name": "Graphic Design for Beginners",
+    "category": "Graphic Design",
+    "description": "Master the fundamentals of graphic design with industry-standard tools.",
+    "instructorId": "104",
+    "ratings": 4.6,
+    "courseContent": [
+      {
+        "section": "Introduction to Graphic Design",
+        "lessons": [
+          {
+            "title": "Understanding Design Principles",
+            "duration": "18 min",
+            "videoUrl": "https://example.com/design1"
+          }
+        ]
+      }
+    ],
+    "pdf": [
+      {
+        "title": "Graphic Design Basics",
+        "fileUrl": "https://example.com/design_guide.pdf"
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "What is Python primarily used for?",
+        "options": [
+          "Web Development",
+          "Data Science",
+          "Cybersecurity",
+          "Networking"
+        ],
+        "answer": "Data Science"
+      },
+      {
+        "question": "Which library is used for data manipulation in Python?",
+        "options": ["NumPy", "Pandas", "TensorFlow", "Matplotlib"],
+        "answer": "Pandas"
+      },
+      {
+        "question": "What keyword is used to define a function in Python?",
+        "options": ["def", "function", "define", "func"],
+        "answer": "def"
+      },
+      {
+        "question": "Which of the following is a Python machine learning library?",
+        "options": ["Scikit-learn", "Django", "Flask", "React"],
+        "answer": "Scikit-learn"
+      },
+      {
+        "question": "What is the output of print(2 ** 3) in Python?",
+        "options": ["5", "6", "8", "10"],
+        "answer": "8"
+      }
+    ],
+
+    "reviews": [
+      {
+        "studentId": "501",
+        "rating": 4.5,
+        "comment": "Helpful and informative.",
+        "date": "2025-02-14"
+      }
+    ],
+    "FAQ": [
+      {
+        "question": "Do I need Photoshop?",
+        "answer": "No, we cover free alternatives too."
+      }
+    ],
+    "comments": [
+      {
+        "studentId": "502",
+        "comment": "Excited to design cool stuff!",
+        "date": "2025-02-15"
+      }
+    ],
+    "enrolledStudents": [
+      {
+        "studentId": "501",
+        "enrollmentDate": "2025-02-14"
+      }
+    ],
+    "enrolledCount": 1,
+    "createdDateTime": "2025-02-14T11:00:00Z",
+    "banner": "https://example.com/design_banner.jpg",
+    "courseLevel": "Beginner"
+  },
+  {
+    "name": "Advanced Machine Learning",
+    "category": "Artificial Intelligence",
+    "description": "Deep dive into machine learning algorithms and AI development.",
+    "instructorId": "105",
+    "ratings": 4.9,
+    "courseContent": [
+      {
+        "section": "Machine Learning Basics",
+        "lessons": [
+          {
+            "title": "Understanding Neural Networks",
+            "duration": "30 min",
+            "videoUrl": "https://example.com/ai1"
+          }
+        ]
+      }
+    ],
+    "pdf": [
+      {
+        "title": "Machine Learning Guide",
+        "fileUrl": "https://example.com/ml_guide.pdf"
+      }
+    ],
+    "quizzes": [
+      {
+        "question": "What is Python primarily used for?",
+        "options": [
+          "Web Development",
+          "Data Science",
+          "Cybersecurity",
+          "Networking"
+        ],
+        "answer": "Data Science"
+      },
+      {
+        "question": "Which library is used for data manipulation in Python?",
+        "options": ["NumPy", "Pandas", "TensorFlow", "Matplotlib"],
+        "answer": "Pandas"
+      },
+      {
+        "question": "What keyword is used to define a function in Python?",
+        "options": ["def", "function", "define", "func"],
+        "answer": "def"
+      },
+      {
+        "question": "Which of the following is a Python machine learning library?",
+        "options": ["Scikit-learn", "Django", "Flask", "React"],
+        "answer": "Scikit-learn"
+      },
+      {
+        "question": "What is the output of print(2 ** 3) in Python?",
+        "options": ["5", "6", "8", "10"],
+        "answer": "8"
+      }
+    ],
+
+    "reviews": [
+      {
+        "studentId": "601",
+        "rating": 5,
+        "comment": "Advanced but very well explained!",
+        "date": "2025-02-16"
+      }
+    ],
+    "FAQ": [
+      {
+        "question": "Do I need math skills?",
+        "answer": "Yes, basic linear algebra and statistics are helpful."
+      }
+    ],
+    "comments": [
+      {
+        "studentId": "602",
+        "comment": "Looks like an amazing course!",
+        "date": "2025-02-17"
+      }
+    ],
+    "enrolledStudents": [
+      {
+        "studentId": "601",
+        "enrollmentDate": "2025-02-16"
+      }
+    ],
+    "enrolledCount": 1,
+    "createdDateTime": "2025-02-16T12:00:00Z",
+    "banner": "https://i.ibb.co.com/KxQF1tJ3/course-banner-9.jpg",
+    "courseLevel": "Advanced"
+  }
+]

@@ -4,6 +4,7 @@ import multer from "multer";
 import path from "path";
 import { errorHandler } from "../Middlewares/index.js";
 import { instructorCollection } from "../allCollections/index.js";
+import { buildFilter, buildSort } from "../utils/filterUtils.js";
 
 const router = express.Router();
 
@@ -17,18 +18,39 @@ const storage = multer.diskStorage({
   },
   filename: (req, file, cb) => {
     const uniqueSuffix = Date.now() + "-" + Math.round(Math.random() * 1e9);
-    cb(null, file.fieldname + "-" + uniqueSuffix + path.extname(file.originalname));
+    cb(
+      null,
+      file.fieldname + "-" + uniqueSuffix + path.extname(file.originalname)
+    );
   },
-});// File filter to check valid file types
+}); // File filter to check valid file types
 const fileFilter = (req, file, cb) => {
-  const allowedImageTypes = ["image/jpeg", "image/png", "image/jpg", "image/webp"];
-  const allowedDocTypes = ["application/pdf", "application/msword", "application/vnd.openxmlformats-officedocument.wordprocessingml.document"];
+  const allowedImageTypes = [
+    "image/jpeg",
+    "image/png",
+    "image/jpg",
+    "image/webp",
+  ];
+  const allowedDocTypes = [
+    "application/pdf",
+    "application/msword",
+    "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+  ];
 
-  if (file.fieldname === "profile" && !allowedImageTypes.includes(file.mimetype)) {
-    return cb(new Error("Profile picture must be an image (JPG, PNG, WEBP)"), false);
+  if (
+    file.fieldname === "profile" &&
+    !allowedImageTypes.includes(file.mimetype)
+  ) {
+    return cb(
+      new Error("Profile picture must be an image (JPG, PNG, WEBP)"),
+      false
+    );
   }
 
-  if (file.fieldname === "resume" && ![...allowedDocTypes, ...allowedImageTypes].includes(file.mimetype)) {
+  if (
+    file.fieldname === "resume" &&
+    ![...allowedDocTypes, ...allowedImageTypes].includes(file.mimetype)
+  ) {
     return cb(new Error("Resume must be a PDF, DOC, DOCX, or an image"), false);
   }
 
@@ -39,16 +61,114 @@ const fileFilter = (req, file, cb) => {
 const upload = multer({ storage: storage, fileFilter: fileFilter });
 
 /** 🟢 GET: Fetch all instructors **/
+// router.get("/", async (req, res) => {
+//   try {
+//     const result = await instructorCollection.find({}).toArray();
+//     res.send({
+//       success: true,
+//       message: "Successfully retrieved data",
+//       data: result,
+//     });
+//   } catch (error) {
+//     errorHandler(error, res);
+//   }
+// });
 router.get("/", async (req, res) => {
   try {
-    const result = await instructorCollection.find({}).toArray();
-    res.send({
+    const {
+      searchTerm = "",
+      selectedSkill = "",
+      sortBy = 'ratings:desc',
+      page = 1,
+      limit = 10,
+    } = req.query;
+    // console.log(req.query);
+    console.log(sortBy,"sortBy")
+
+   
+    const pageInt = parseInt(page);
+    const limitInt = parseInt(limit);
+    const skip = (pageInt - 1) * limitInt;
+    const sort = buildSort(sortBy);
+    const filter = buildFilter(searchTerm, selectedSkill);
+    console.log("build-Filter",filter);
+    
+
+    console.log("aggriatae",filter)
+    const result= await instructorCollection.aggregate([
+    
+    {
+      $facet:{
+        paginationResults:[
+          {$match:filter},
+          {$skip:skip},
+          { $sort: sort }, // Apply dynamic sorting
+          {$limit:limitInt},
+          {
+            $project:{
+              name:1,
+              image:1,
+              dob:1,
+              gender:1, 
+              totalEnrolledStudents:1,
+              yearsOfExperience:1,
+              skills:1,
+              profession:1,
+              ratings:1,
+              socialLinks:1,
+              //you can add more fields here if you want
+            },
+          },
+        ],
+
+        totalCount:[
+          {$match:filter},
+          {$count:"count"},
+        ],
+        allSkill:[
+          { $unwind: "$skills" },
+          { $group: { _id: "$skills.category"} },
+          { $sort: { _id: 1 } }, // Optional: sort alphabetically
+          {
+            $project: {
+              _id: 0,          
+              label: "$_id"
+            }
+          }
+  
+        ],
+      },
+      
+    },
+    ]).toArray()
+
+    const {paginationResults, totalCount,allSkill} =result[0]
+    console.log(allSkill,"allSkill")
+
+
+    const total = totalCount[0]?.count || 0;
+    res.status(200).json({
       success: true,
-      message: "Successfully retrieved data",
-      data: result,
+      message: "Instructors data retrieved successfully",
+      data: paginationResults,
+      filterOptions: {
+        skills:(allSkill||[])
+      },
+      
+      total:totalCount[0]?.count||0,
+      pagination: {
+        totalCount: total,
+        page: pageInt, 
+        limit: limitInt,
+        totalPages: Math.ceil(totalCount / limitInt),
+      },
     });
   } catch (error) {
-    errorHandler(error, res);
+    console.error(`Error fetching instructors: ${error.message}`);
+    res.status(500).json({
+      success: false,
+      message: "Error fetching instructors",
+    });
   }
 });
 

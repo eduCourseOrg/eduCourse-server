@@ -1,0 +1,186 @@
+[
+  {
+    "instructorId": "101",
+    "name": "John Doe",
+    "image": "https://i.ibb.co.com/3yVDfwkM/114089.jpg",
+    "bio": {
+      "education": "MSc in Computer Science, MIT",
+      "profession": "Senior Web Developer",
+      "skills": ["JavaScript", "React", "Node.js", "MongoDB"],
+      "yearsOfExperience": 8
+    },
+    "ratings": 4.9,
+    "socialLinks": {
+      "linkedin": "https://linkedin.com/in/johndoe",
+      "twitter": "https://twitter.com/johndoe",
+      "github": "https://github.com/johndoe"
+    },
+    "courses": ["C101", "C102"],
+    "totalEnrolledStudents": 270,
+    "joiningDate": "2017-06-15",
+    "website": "https://johndoe.dev",
+    "address": "123 Main St, New York, USA",
+    "email": "john.doe@example.com",
+    "phoneNumber": "+1 234 567 8901"
+  },
+  {
+    "instructorId": "102",
+    "name": "Jane Smith",
+    "image": "https://i.ibb.co.com/fdB92Knr/instructor2.jpg",
+    "bio": {
+      "education": "PhD in Data Science, Stanford University",
+      "profession": "Data Scientist & AI Researcher",
+      "skills": ["Python", "Machine Learning", "Deep Learning", "Pandas"],
+      "yearsOfExperience": 10
+    },
+    "ratings": 4.8,
+    "socialLinks": {
+      "linkedin": "https://linkedin.com/in/janesmith",
+      "twitter": "https://twitter.com/janesmith",
+      "github": "https://github.com/janesmith"
+    },
+    "courses": ["C201", "C202"],
+    "totalEnrolledStudents": 380,
+    "joiningDate": "2015-09-20",
+    "website": "https://janesmith.ai",
+    "address": "456 Tech Ave, San Francisco, USA",
+    "email": "jane.smith@example.com",
+    "phoneNumber": "+1 987 654 3210"
+  },
+  {
+    "instructorId": "103",
+    "name": "Emily Johnson",
+    "image": "https://i.ibb.co.com/qYg3kNzW/instructor4.jpg",
+    "bio": {
+      "education": "BSc in Software Engineering, Harvard",
+      "profession": "Full-Stack Developer",
+      "skills": ["HTML", "CSS", "JavaScript", "Vue.js"],
+      "yearsOfExperience": 6
+    },
+    "ratings": 4.7,
+    "socialLinks": {
+      "linkedin": "https://linkedin.com/in/emilyjohnson",
+      "twitter": "https://twitter.com/emilyjohnson"
+    },
+    "courses": ["C301", "C302"],
+    "totalEnrolledStudents": 210,
+    "joiningDate": "2018-03-25",
+    "website": "https://emilyjohnson.dev",
+    "address": "789 Web St, Los Angeles, USA",
+    "email": "emily.johnson@example.com",
+    "phoneNumber": "+1 321 654 9870"
+  },
+  {
+    "instructorId": "104",
+    "name": "Michael Brown",
+    "image": "https://i.ibb.co.com/xqmcz6v7/instructor5.jpg",
+    "bio": {
+      "education": "MSc in Cybersecurity, Oxford",
+      "profession": "Cybersecurity Specialist",
+      "skills": ["Ethical Hacking", "Penetration Testing", "Cyber Law"],
+      "yearsOfExperience": 12
+    },
+    "ratings": 4.6,
+    "socialLinks": {
+      "linkedin": "https://linkedin.com/in/michaelbrown",
+      "github": "https://github.com/michaelbrown"
+    },
+    "courses": ["C401", "C402"],
+    "totalEnrolledStudents": 500,
+    "joiningDate": "2014-11-10",
+    "website": "https://michaelbrown.com",
+    "address": "456 Security Rd, London, UK",
+    "email": "michael.brown@example.com",
+    "phoneNumber": "+44 123 456 7890"
+  },
+  {
+    "instructorId": "105",
+    "name": "Sarah Lee",
+    "image": "https://i.ibb.co.com/b5PD0VhC/instructor6.jpg",
+    "bio": {
+      "education": "MBA in Digital Marketing, NYU",
+      "profession": "Marketing Consultant",
+      "skills": ["SEO", "Social Media Marketing", "PPC"],
+      "yearsOfExperience": 7
+    },
+    "ratings": 4.8,
+    "socialLinks": {
+      "linkedin": "https://linkedin.com/in/sarahlee",
+      "twitter": "https://twitter.com/sarahlee"
+    },
+    "courses": ["C501", "C502"],
+    "totalEnrolledStudents": 320,
+    "joiningDate": "2019-07-05",
+    "website": "https://sarahleemarketing.com",
+    "address": "789 Market St, Chicago, USA",
+    "email": "sarah.lee@example.com",
+    "phoneNumber": "+1 456 789 0123"
+  },
+  {
+    "instructorId": "106",
+    "name": "David Wilson",
+    "image": "https://i.ibb.co.com/21mtQhWS/instructor7.jpg",
+    "bio": {
+      "education": "PhD in AI & ML, Cambridge",
+      "profession": "AI Researcher",
+      "skills": ["TensorFlow", "PyTorch", "Data Science"],
+      "yearsOfExperience": 15
+    },
+    "ratings": 4.9,
+    "socialLinks": {
+      "linkedin": "https://linkedin.com/in/davidwilson",
+      "github": "https://github.com/davidwilson"
+    },
+    "courses": ["C601", "C602"],
+    "totalEnrolledStudents": 450,
+    "joiningDate": "2012-05-18",
+    "website": "https://davidwilson.ai",
+    "address": "101 AI Blvd, Berlin, Germany",
+    "email": "david.wilson@example.com",
+    "phoneNumber": "+49 987 654 3210"
+  },
+  {
+    "instructorId": "107",
+    "name": "Olivia Martinez",
+    "image": "https://i.ibb.co.com/LznsJS4M/instructor8.jpg",
+    "bio": {
+      "education": "BSc in Graphic Design, UCLA",
+      "profession": "UI/UX Designer",
+      "skills": ["Figma", "Adobe XD", "User Research"],
+      "yearsOfExperience": 9
+    },
+    "ratings": 4.7,
+    "socialLinks": {
+      "linkedin": "https://linkedin.com/in/oliviamartinez"
+    },
+    "courses": ["C701", "C702"],
+    "totalEnrolledStudents": 290,
+    "joiningDate": "2016-08-21",
+    "website": "https://oliviamartinez.design",
+    "address": "202 Design St, Madrid, Spain",
+    "email": "olivia.martinez@example.com",
+    "phoneNumber": "+34 654 321 0987"
+  },
+  {
+    "instructorId": "108",
+    "name": "James Anderson",
+    "image": "https://i.ibb.co.com/d0Qx25bw/instructor9.jpg",
+    "bio": {
+      "education": "BSc in Finance, London School of Economics",
+      "profession": "Finance Analyst",
+      "skills": ["Stock Market", "Investing", "Financial Modeling"],
+      "yearsOfExperience": 11
+    },
+    "ratings": 4.6,
+    "socialLinks": {
+      "linkedin": "https://linkedin.com/in/jamesanderson"
+    },
+    "courses": ["C801", "C802"],
+    "totalEnrolledStudents": 400,
+    "joiningDate": "2013-10-02",
+    "website": "https://jamesandersonfinance.com",
+    "address": "345 Wall St, New York, USA",
+    "email": "james.anderson@example.com",
+    "phoneNumber": "+1 876 543 2109"
+  }
+]
