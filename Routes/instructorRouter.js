@@ -172,45 +172,37 @@ router.get("/", async (req, res) => {
   }
 });
 
-router.post("/",async(req,res)=>{
-  const instructorData= req.body;
-  console.log("from front",instructorData)
-  const result = await instructorCollection.insertOne(instructorData);
-  res.status(201).send({
-          success: true,
-          message: "Instructor data submitted successfully!",
-          data:result
-        });
-  
-})
 /** 🔴 POST: Submit instructor data with file upload **/
-// router.post("/", upload.fields([{ name: "profile" }, { name: "resume" }]), async (req, res) => {
-//   try {
-//     const instructorData = req.body;
-//     console.log("data from frontend",instructorData)
+router.post(
+  "/",
+  upload.fields([{ name: "profile" }, { name: "resume" }]),
+  async (req, res) => {
+    try {
+      const instructorData = req.body;
 
-//     // Ensure files exist before adding to response
-//     if (req.files.profile && req.files.profile.length > 0) {
-//       instructorData.profileUrl = `/uploads/${req.files.profile[0].filename}`;
-//     }
-//     if (req.files.resume && req.files.resume.length > 0) {
-//       instructorData.resumeUrl = `/uploads/${req.files.resume[0].filename}`;
-//     }
+      // Ensure files exist before adding to response
+      if (req.files.profile && req.files.profile.length > 0) {
+        instructorData.profileUrl = `/uploads/${req.files.profile[0].filename}`;
+      }
+      if (req.files.resume && req.files.resume.length > 0) {
+        instructorData.resumeUrl = `/uploads/${req.files.resume[0].filename}`;
+      }
 
-//     // Insert instructor data into the database
-//     const result = await testInstructorCollection.insertOne(instructorData);
+      // Insert instructor data into the database
+      const result = await instructorCollection.insertOne(instructorData);
 
-//     res.status(201).send({
-//       success: true,
-//       message: "Instructor data submitted successfully!",
-//       insertedId: result.insertedId,
-//       profileUrl: instructorData.profileUrl || null,
-//       resumeUrl: instructorData.resumeUrl || null,
-//     });
-//   } catch (error) {
-//     errorHandler(error, res);
-//   }
-// });
+      res.status(201).send({
+        success: true,
+        message: "Instructor data submitted successfully!",
+        insertedId: result.insertedId,
+        profileUrl: instructorData.profileUrl || null,
+        resumeUrl: instructorData.resumeUrl || null,
+      });
+    } catch (error) {
+      errorHandler(error, res);
+    }
+  }
+);
 
 /** 🔵 GET: Fetch instructor by ID **/
 router.get("/:id", async (req, res) => {
