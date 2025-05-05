@@ -1,84 +1,107 @@
 {
-  "meta": {
-    "totalPosts": 42,
-    "timestamp": "2025-04-29T12:00:00Z"
-  },
-  "categories": [
-    {
-      "id": "frontend",
-      "name": "Frontend",
-      "postCount": 12
-    },
-    {
-      "id": "backend",
-      "name": "Backend",
-      "postCount": 9
-    },
-    {
-      "id": "devops",
-      "name": "DevOps",
-      "postCount": 6
-    }
-  ],
-  "archives": [
-    {
-      "id": "2025-04",
-      "label": "April 2025",
-      "year": 2025,
-      "month": 4,
-      "postCount": 5
-    },
-    {
-      "id": "2025-03",
-      "label": "March 2025",
-      "year": 2025,
-      "month": 3,
-      "postCount": 7
-    }
-  ],
   "recentPosts": [
     {
-      "id": "deploying-docker-nginx",
-      "title": "Deploying with Docker and NGINX",
-      "slug": "deploying-docker-nginx",
-      "publishedAt": "2025-04-27T14:22:00Z",
-      "excerpt": "Learn how to set up Docker and serve your apps with NGINX.",
-      "thumbnailUrl": "https://cdn.example.com/posts/docker.jpg",
-      "category": {
-        "id": "devops",
-        "name": "DevOps"
-      }
+      "title": "Finding the right guitar for your style - 5 tips",
+      "slug": "finding-right-guitar-5-tips",
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus pariatur animi temporibus nesciunt praesentium",
+      "publishedAt": "2025-06-31T00:00:00Z",
+      "authorId": "66337e3d5295a92b5b964301",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1609557927087-f9cf8e88de18?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
+      "tags": ["guitar", "style", "tips"],
+      "gallery": [
+        "https://images.unsplash.com/photo-1609557927087-f9cf8e88de18?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+      ]
     },
+
     {
-      "id": "css-grid-vs-flexbox",
-      "title": "CSS Grid vs Flexbox in 2025",
-      "slug": "css-grid-vs-flexbox",
-      "publishedAt": "2025-04-25T08:10:00Z",
-      "excerpt": "A detailed comparison between CSS Grid and Flexbox in modern web layouts.",
-      "thumbnailUrl": "https://cdn.example.com/posts/grid-vs-flexbox.jpg",
-      "category": {
-        "id": "frontend",
-        "name": "Frontend"
-      }
+      "title": "Finding the right guitar for your style - 5 tips",
+      "slug": "finding-right-guitar-5-tips-2",
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus pariatur animi temporibus nesciunt praesentium",
+      "publishedAt": "2025-06-31T00:00:00Z",
+      "authorId": "66337e3d5295a92b5b964301",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1609557927087-f9cf8e88de18?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
+      "tags": ["guitar", "style", "tips"],
+      "gallery": [
+        "https://images.unsplash.com/photo-1609557927087-f9cf8e88de18?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+      ]
     }
   ],
-  "search": {
-    "query": "docker",
-    "results": [
-      {
-        "id": "deploying-docker-nginx",
-        "title": "Deploying with Docker and NGINX",
-        "slug": "deploying-docker-nginx",
-        "excerpt": "Learn how to set up Docker and serve your apps with NGINX.",
-        "publishedAt": "2025-04-27T14:22:00Z"
-      },
-      {
-        "id": "docker-compose-beginners",
-        "title": "Docker Compose for Beginners",
-        "slug": "docker-compose-beginners",
-        "excerpt": "A quick intro to managing multi-container apps using Docker Compose.",
-        "publishedAt": "2025-03-12T09:45:00Z"
-      }
-    ]
-  }
+  "archives": ["10th Oct 2022", "5th February 2025", "13th December 2024"],
+  "galleryImages": [
+    "https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+    "https://i.ibb.co.com/6RGBq1Rz/course-banner-1.jpg",
+    "https://i.ibb.co.com/sv2r5c3g/course-banner-2.jpg",
+    "https://i.ibb.co.com/t6pVb05/course-banner-4.jpg",
+    "https://i.ibb.co.com/Xkr2PwjG/course-banner-6.jpg",
+    "https://i.ibb.co.com/KjrrPTSt/course-banner-8.jpg"
+  ],
+  "mainArticles": [
+    {
+      "title": "How to position your furniture for positivity",
+      "slug": "how-position-furniture-positivity",
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus pariatur animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis quidem, mollitia itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius atque dignissimos. Molestias explicabo corporis voluptatem?",
+      "publishedAt": "2022-10-10T00:00:00Z",
+      "authorId": "66337e3d5295a92b5b964301",
+      "thumbnailUrl": "https://i.ibb.co.com/HLpT8SwC/banner-5.jpg",
+      "tags": ["furniture", "positivity"],
+      "gallery": ["https://i.ibb.co.com/HLpT8SwC/banner-5.jpg"]
+    },
+    {
+      "title": "How to position your furniture for positivity",
+      "slug": "how-position-furniture-positivity-2",
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus pariatur animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis quidem, mollitia itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius atque dignissimos. Molestias explicabo corporis voluptatem?",
+      "publishedAt": "2022-10-10T00:00:00Z",
+      "authorId": "66337e3d5295a92b5b964301",
+      "authorName": "John Doe",
+      "categoryId": "",
+      "thumbnailUrl": "https://i.ibb.co.com/yFLZRw9c/course-banner-7.jpg",
+      "tags": ["furniture", "positivity"],
+      "gallery": ["https://i.ibb.co.com/yFLZRw9c/course-banner-7.jpg"]
+    },
+    {
+      "title": "How to position your furniture for positivity",
+      "slug": "how-position-furniture-positivity-3",
+      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus pariatur animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis quidem, mollitia itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius atque dignissimos. Molestias explicabo corporis voluptatem?",
+      "publishedAt": "2022-10-10T00:00:00Z",
+      "authorName": "John Doe",
+      "authorId": "66337e3d5295a92b5b964301",
+      "categoryId": "",
+      "thumbnailUrl": "https://i.ibb.co.com/KjrrPTSt/course-banner-8.jpg",
+      "tags": ["furniture", "positivity"],
+      "gallery": ["https://i.ibb.co.com/KjrrPTSt/course-banner-8.jpg"]
+    }
+  ],
+
+  "categories": [
+    {
+      "name": "DevOps",
+      "slug": "devops",
+      "description": "All about DevOps, Docker, and CI/CD."
+    },
+    {
+      "name": "DevOps",
+      "slug": "devops",
+      "description": "All about DevOps, Docker, and CI/CD."
+    },
+    {
+      "name": "DevOps",
+      "slug": "devops",
+      "description": "All about DevOps, Docker, and CI/CD."
+    },
+    {
+      "name": "WebDevelopment",
+      "slug": "web-development"
+    },
+    {
+      "name": "Networking",
+      "slug": "networking"
+    }
+  ],
+  "tags": [
+    {
+      "name": "docker",
+      "slug": "docker",
+      "description": "Posts related to Docker containers."
+    }
+  ]
 }
