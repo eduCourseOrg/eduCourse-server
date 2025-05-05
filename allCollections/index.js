@@ -16,6 +16,9 @@ export const studentCollection = client.db("eduCourse").collection("students");
 export const instructorCollection = client
   .db("eduCourse")
   .collection("instructors");
+export const testInstructorCollection = client
+  .db("eduCourse")
+  .collection("testInstructors");
 export const paymentCollection = client.db("eduCourse").collection("payments");
 export const bucket = new GridFSBucket(client.db("eduCourse"), {
   bucketName: "videos",
