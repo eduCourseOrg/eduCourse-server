@@ -1,107 +1,84 @@
 {
-  "recentPosts": [
+  "blogs": [
     {
-      "title": "Finding the right guitar for your style - 5 tips",
-      "slug": "finding-right-guitar-5-tips",
-      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus pariatur animi temporibus nesciunt praesentium",
-      "publishedAt": "2025-06-31T00:00:00Z",
+      "title": "Getting Started with React Hooks",
+      "slug": "getting-started-react-hooks",
+      "excerpt": "Learn how to use React Hooks to simplify your functional components and manage state effectively in modern React applications.",
+      "content": "Full article content about React Hooks would go here...",
+      "publishedAt": "2023-05-15T00:00:00Z",
       "authorId": "66337e3d5295a92b5b964301",
-      "thumbnailUrl": "https://images.unsplash.com/photo-1609557927087-f9cf8e88de18?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
-      "tags": ["guitar", "style", "tips"],
-      "gallery": [
-        "https://images.unsplash.com/photo-1609557927087-f9cf8e88de18?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
-      ]
-    },
-
-    {
-      "title": "Finding the right guitar for your style - 5 tips",
-      "slug": "finding-right-guitar-5-tips-2",
-      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus pariatur animi temporibus nesciunt praesentium",
-      "publishedAt": "2025-06-31T00:00:00Z",
-      "authorId": "66337e3d5295a92b5b964301",
-      "thumbnailUrl": "https://images.unsplash.com/photo-1609557927087-f9cf8e88de18?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
-      "tags": ["guitar", "style", "tips"],
-      "gallery": [
-        "https://images.unsplash.com/photo-1609557927087-f9cf8e88de18?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
-      ]
-    }
-  ],
-  "archives": ["10th Oct 2022", "5th February 2025", "13th December 2024"],
-  "galleryImages": [
-    "https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
-    "https://i.ibb.co.com/6RGBq1Rz/course-banner-1.jpg",
-    "https://i.ibb.co.com/sv2r5c3g/course-banner-2.jpg",
-    "https://i.ibb.co.com/t6pVb05/course-banner-4.jpg",
-    "https://i.ibb.co.com/Xkr2PwjG/course-banner-6.jpg",
-    "https://i.ibb.co.com/KjrrPTSt/course-banner-8.jpg"
-  ],
-  "mainArticles": [
-    {
-      "title": "How to position your furniture for positivity",
-      "slug": "how-position-furniture-positivity",
-      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus pariatur animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis quidem, mollitia itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius atque dignissimos. Molestias explicabo corporis voluptatem?",
-      "publishedAt": "2022-10-10T00:00:00Z",
-      "authorId": "66337e3d5295a92b5b964301",
-      "thumbnailUrl": "https://i.ibb.co.com/HLpT8SwC/banner-5.jpg",
-      "tags": ["furniture", "positivity"],
-      "gallery": ["https://i.ibb.co.com/HLpT8SwC/banner-5.jpg"]
-    },
-    {
-      "title": "How to position your furniture for positivity",
-      "slug": "how-position-furniture-positivity-2",
-      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus pariatur animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis quidem, mollitia itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius atque dignissimos. Molestias explicabo corporis voluptatem?",
-      "publishedAt": "2022-10-10T00:00:00Z",
-      "authorId": "66337e3d5295a92b5b964301",
-      "authorName": "John Doe",
-      "categoryId": "",
+      "authorName": "Sarah Johnson",
+      "category": {
+        "categoryName": "Front End",
+        "categoryId": "front_end"
+      },
       "thumbnailUrl": "https://i.ibb.co.com/yFLZRw9c/course-banner-7.jpg",
-      "tags": ["furniture", "positivity"],
+      "tags": ["react", "hooks", "javascript"],
       "gallery": ["https://i.ibb.co.com/yFLZRw9c/course-banner-7.jpg"]
     },
     {
-      "title": "How to position your furniture for positivity",
-      "slug": "how-position-furniture-positivity-3",
-      "excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus pariatur animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis quidem, mollitia itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius atque dignissimos. Molestias explicabo corporis voluptatem?",
-      "publishedAt": "2022-10-10T00:00:00Z",
-      "authorName": "John Doe",
+      "title": "Building REST APIs with Node.js and Express",
+      "slug": "building-rest-apis-node-express",
+      "excerpt": "A comprehensive guide to creating robust RESTful APIs using Node.js and Express framework with best practices.",
+      "content": "Full article content about Node.js and Express would go here...",
+      "publishedAt": "2023-06-20T00:00:00Z",
+      "authorId": "66337e3d5295a92b5b964302",
+      "authorName": "Mike Chen",
+      "category": {
+        "categoryName": "Back End",
+        "categoryId": "back_end"
+      },
+      "thumbnailUrl": "https://i.ibb.co.com/HLpT8SwC/banner-5.jpg",
+      "tags": ["nodejs", "express", "api"],
+      "gallery": ["https://i.ibb.co.com/HLpT8SwC/banner-5.jpg"]
+    },
+    {
+      "title": "MERN Stack Authentication Guide",
+      "slug": "mern-stack-authentication-guide",
+      "excerpt": "Implement secure authentication in your MERN stack applications using JWT and best security practices.",
+      "content": "Full article content about MERN authentication would go here...",
+      "publishedAt": "2023-07-10T00:00:00Z",
       "authorId": "66337e3d5295a92b5b964301",
-      "categoryId": "",
+      "authorName": "Sarah Johnson",
+      "category": {
+        "categoryName": "MERN Stack",
+        "categoryId": "mern_stack"
+      },
+      "thumbnailUrl": "https://i.ibb.co.com/Xkr2PwjG/course-banner-6.jpg",
+      "tags": ["mern", "authentication", "jwt", "security"],
+      "gallery": ["https://i.ibb.co.com/Xkr2PwjG/course-banner-6.jpg"]
+    },
+    {
+      "title": "CSS Grid vs Flexbox: When to Use Each",
+      "slug": "css-grid-vs-flexbox",
+      "excerpt": "Understanding the differences between CSS Grid and Flexbox and when to use each layout system in your projects.",
+      "content": "Full article content about CSS layouts would go here...",
+      "publishedAt": "2023-04-05T00:00:00Z",
+      "authorId": "66337e3d5295a92b5b964303",
+      "authorName": "Alex Rivera",
+      "category": {
+        "categoryName": "Front End",
+        "categoryId": "front_end"
+      },
       "thumbnailUrl": "https://i.ibb.co.com/KjrrPTSt/course-banner-8.jpg",
-      "tags": ["furniture", "positivity"],
+      "tags": ["css", "grid", "flexbox", "layout"],
       "gallery": ["https://i.ibb.co.com/KjrrPTSt/course-banner-8.jpg"]
-    }
-  ],
-
-  "categories": [
-    {
-      "name": "DevOps",
-      "slug": "devops",
-      "description": "All about DevOps, Docker, and CI/CD."
     },
     {
-      "name": "DevOps",
-      "slug": "devops",
-      "description": "All about DevOps, Docker, and CI/CD."
-    },
-    {
-      "name": "DevOps",
-      "slug": "devops",
-      "description": "All about DevOps, Docker, and CI/CD."
-    },
-    {
-      "name": "WebDevelopment",
-      "slug": "web-development"
-    },
-    {
-      "name": "Networking",
-      "slug": "networking"
-    }
-  ],
-  "tags": [
-    {
-      "name": "docker",
-      "slug": "docker",
-      "description": "Posts related to Docker containers."
+      "title": "Docker for Web Developers",
+      "slug": "docker-for-web-developers",
+      "excerpt": "Learn how to containerize your web applications with Docker to improve development workflows and deployment processes.",
+      "content": "Full article content about Docker would go here...",
+      "publishedAt": "2023-08-12T00:00:00Z",
+      "authorId": "66337e3d5295a92b5b964302",
+      "authorName": "Mike Chen",
+      "category": {
+        "categoryName": "DevOps",
+        "categoryId": "dev_ops"
+      },
+      "thumbnailUrl": "https://i.ibb.co.com/t6pVb05/course-banner-4.jpg",
+      "tags": ["docker", "containers", "devops"],
+      "gallery": ["https://i.ibb.co.com/t6pVb05/course-banner-4.jpg"]
     }
   ]
 }
